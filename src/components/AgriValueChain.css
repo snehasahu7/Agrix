@@ -1,0 +1,183 @@
+.agri-value-chain {
+  padding: 5rem 0;
+  background-color: #f8f9fa;
+  position: relative;
+  overflow: hidden;
+}
+
+.agri-value-chain .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  position: relative;
+}
+
+.value-chain-header {
+  text-align: center;
+  margin-bottom: 4rem;
+  position: relative;
+  z-index: 2;
+}
+
+.value-chain-header h2 {
+  color: #2c3e50;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.value-chain-header p {
+  color: #95a5a6;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.value-chain-image-container {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0;
+}
+
+.value-chain-image {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px #0000001a;
+}
+
+.value-chain-spiral {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.value-chain-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 4rem;
+  position: relative;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.6s ease forwards;
+}
+
+.value-chain-item:nth-child(odd) {
+  margin-left: 2rem;
+}
+
+.value-chain-item:nth-child(even) {
+  margin-left: 4rem;
+}
+
+.value-chain-icon {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  color: #ffffff;
+  margin-right: 2rem;
+  flex-shrink: 0;
+  position: relative;
+  z-index: 1;
+}
+
+.value-chain-content {
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px #0000001a;
+  flex-grow: 1;
+  position: relative;
+}
+
+.value-chain-content::before {
+  content: '';
+  position: absolute;
+  left: -20px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 2px;
+  background: linear-gradient(to left, #00b899, #27ae60);
+}
+
+.value-chain-content h3 {
+  color: #2c3e50;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.value-chain-content ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.value-chain-content li {
+  color: #95a5a6;
+  margin-bottom: 0.5rem;
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.value-chain-content li::before {
+  content: '•';
+  color: #00b899;
+  position: absolute;
+  left: 0;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .agri-value-chain {
+    padding: 4rem 0;
+  }
+
+  .value-chain-header h2 {
+    font-size: 2rem;
+  }
+
+  .value-chain-header p {
+    font-size: 1rem;
+  }
+
+  .value-chain-image-container {
+    padding: 1rem 0;
+  }
+
+  .value-chain-item {
+    margin-left: 0 !important;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .value-chain-icon {
+    margin: 0 0 1.5rem 0;
+  }
+
+  .value-chain-content::before {
+    left: 50%;
+    top: -20px;
+    transform: translateX(-50%);
+    width: 2px;
+    height: 20px;
+  }
+} 

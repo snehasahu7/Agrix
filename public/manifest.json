@@ -1,0 +1,8 @@
+{
+  "short_name": "Agrix",
+  "name": "Agrix agro",
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#00b899",
+  "background_color": "#ffffff"
+} 
