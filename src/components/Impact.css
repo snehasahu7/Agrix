@@ -60,6 +60,8 @@
 
 .impact-card:hover {
   transform: translateY(-5px);
+  border: 1px solid;
+  border-color: #00b899;
 }
 
 .impact-icon {
@@ -144,4 +146,4 @@
   .impact-content p {
     font-size: 0.9rem;
   }
-} 
+}
