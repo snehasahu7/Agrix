@@ -20,11 +20,26 @@ nav {
   width: 100%;
 }
 
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo a {
+  text-decoration: none;
+}
+
 .logo h1 {
   color: #00b899;
   font-size: 1.8rem;
   font-weight: 700;
   margin: 0;
+  letter-spacing: -0.5px;
+  transition: color 0.3s ease;
+}
+
+.logo h1:hover {
+  color: #009b82;
 }
 
 .nav-links {

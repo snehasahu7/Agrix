@@ -1,30 +1,36 @@
 import React from 'react';
+import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import Navbar from './components/Navbar';
-import Hero from './components/Hero';
-import Philosophy from './components/Philosophy';
-
-import Services from './components/Services';
-
-
+import Home from './components/Home';
+import Contact from './components/Contact';
 import Footer from './components/Footer';
 import SocialSidebar from './components/SocialSidebar';
-import Impact from './components/Impact';
-import AgriValueChain from './components/AgriValueChain';
 import './App.css';
 
-function App() {
+// Create a wrapper component to use the useLocation hook
+const AppContent = () => {
+  const location = useLocation();
+  const showSocialSidebar = location.pathname !== '/contact';
+
   return (
     <div className="App">
       <Navbar />
-      <SocialSidebar />
-      <Hero />
-      <Philosophy />
-      <Services />
-      <Impact />
-      <AgriValueChain />
-      
+      {showSocialSidebar && <SocialSidebar />}
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/contact" element={<Contact />} />
+        {/* Add other routes as needed */}
+      </Routes>
       <Footer />
     </div>
+  );
+};
+
+function App() {
+  return (
+    <Router>
+      <AppContent />
+    </Router>
   );
 }
 
