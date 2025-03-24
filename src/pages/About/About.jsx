@@ -122,9 +122,10 @@ const About = ()=>{
 
     return(
         <>
+          
         
-         <div className="about">
-            <motion.div 
+            <div className="about">
+                            <motion.div 
                 className="introtext"
                 initial="hidden"
                 whileInView={{opacity:1,y:0}}
@@ -143,7 +144,12 @@ const About = ()=>{
                 animate="animate"
                 variants={imageVariants}
             />
-        </div>
+            </div>
+
+        
+            
+    
+        
         <div className="visionbox">
             <div className="box">
                 <div className="vl"></div>
