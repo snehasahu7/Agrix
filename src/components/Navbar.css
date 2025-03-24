@@ -25,6 +25,11 @@ nav {
   align-items: center;
 }
 
+.logo-img{
+  width: 110px;
+  height: 50px;
+}
+
 .logo a {
   text-decoration: none;
 }

@@ -1,10 +1,25 @@
 import React from "react";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import { motion } from "framer-motion";
 import intropic from "../../assets/Intropic.png"
 import journeypic from "../../assets/journey.png"
 import { BsRocket } from "react-icons/bs";
 import { RiFocus2Line } from "react-icons/ri";
+import investor from '../../assets/investors.js';
+import f1 from '../../assets/nilaypandey.png';
+import f2 from '../../assets/sandeepjoshi.png';
+import f3 from '../../assets/sauravsingh.png';
+import f4 from '../../assets/vivekkumar.png';
+import img1 from "../../assets/Pankajkarna.png"
+import img2 from "../../assets/abhinavgrover.png"
+import img3 from "../../assets/samarthagarwal.png"
+import img4 from "../../assets/skgaitam.png"
+import img5 from "../../assets/manishcpandey.png"
+import { FaLinkedin } from "react-icons/fa6";
 import './About.css'
+
 
 const About = ()=>{
     const textVariants = {
@@ -31,6 +46,79 @@ const About = ()=>{
             }
         }
     };
+
+    const team = [
+        {   
+            imgg: f1,
+            name:"Dr. Nilay Pandey",
+            title:'Tech Development and Data Science',
+            title2:'Phd, IIT Patna',
+
+        },
+        {
+            imgg: f2,
+            name:"Dr. Sandeep Joshi",
+            title:'D2D Communication and Machine Learning',
+            title2:'Phd, IIT Patna',
+
+        },
+        {
+            imgg: f3,
+            name:"Saurav Singh",
+            title:'Operation and Supply Chain Management',
+            title2:'B.Tech, CSE, WBUT',
+
+        },
+        {
+            imgg: f4,
+            name:"Vivek Kumar",
+            title:'Rural Outreach and Agro-innovation',
+            title2:'B.Tech, CSE, WBUT',
+
+        }
+
+    ]
+
+    const advisoryboard=[
+        {
+            image:img1,
+            name:"Pankaj Karna",
+            title:"Managing Director at MAPLE Capital"
+        },
+        {
+            image:img2,
+            name:"Abhinav Grover",
+            title:"Director at Maple Accelerator"
+        },
+        {
+            image:img3,
+            name:"Samarth Agarwal",
+            title:"Co-founder & CEO, MaxWholesale"
+        },
+        {
+            image:img4,
+            name:"S.K Gautam",
+            title:"Advisor for Agri Value Chain"
+        },
+        {
+            image:img5,
+            name:"Manish C. Pandey",
+            title:"CEO at Agriculturist"
+        }
+    ]
+
+    const settings = {
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 3000, // Changes slide every 3 seconds
+        arrows: false,
+      };
+    
+
 
     return(
         <>
@@ -93,16 +181,80 @@ const About = ()=>{
                   </motion.div>
         </motion.div>
 
-        <div className="founders">
-            <p className="header">Our Founders</p>
+        <div className="founder">
+            <motion.p className="header"
+               initial="hidden"
+               whileInView={{opacity:1,y:0}}
+               viewport={{ once: true }}
+               variants={textVariants}>Our Team</motion.p>
+            <p className="header2">People That Make It All Happen</p>
+            <Slider {...settings}>
+                 {team.map((member) => (
+                <div  className="team-slide">
+                    <img src={member.imgg} alt={member.name} className="team-img" />
+                    <h3>{member.name}</h3>
+                    <p className="team-text">{member.title}</p>
+                    <p >{member.title2}</p>
+          </div>
+        ))}
+      </Slider>
+            
         </div>
+
+        <motion.div 
+        className="advisory-board"
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+        variants={textVariants}>
+            <p className="header">Advisory Board</p>
+            <div className="founderss">
+             {advisoryboard.map((board)=>{
+              
+                 return(
+                    
+                      <div className="founders-card">
+                        <img src={board.image} className="profile-pic" />
+                        <p className="name">{board.name}</p>
+                        <div className="titlediv"><p className="title">{board.title}</p></div>
+                        
+                        {/*<div className="title2"><p className="title2">{team.title2}</p></div>
+                        <a ><FaLinkedin className="linkedinicon"/></a>*/}
+                     </div>
+                  
+                )
+                
+                 
+             })}
+              </div> 
+        </motion.div>
              
-        <div className="investors">
+        <motion.div 
+        initial="hidden"
+        whileInView={{opacity:1,y:0}}
+        viewport={{ once: true }}
+        variants={textVariants}
+        className="investors">
              
             <p className="header">Our Investors</p>
+            <motion.div
+             whileInView={{opacity:1, y:0}}
+             initial={{y:100, opacity:0}}
+             transition={{duratiion:1.5, delay:0.5}}className="partners">
+                 {investor.map((image)=>{
+                    return(
+                        <motion.img whileInView={{opacity:1, y:0}}
+                        initial={{y:100, opacity:0}}
+                        transition={{duratiion:1.5,staggerChildren:0.8}}  whileHover={{ 
+                            scale: 1.05,
+                            transition: { duration: 0.3 }
+                          }}className='invpic' src={image} />
+                    ) 
+                    
+                 })}
+            </motion.div>
 
-
-        </div>
+        </motion.div>
         </>
 
         

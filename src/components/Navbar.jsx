@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Link,useNavigate } from 'react-router-dom';
+import logo from '../assets/ezgif.com-gif-maker.gif';
 import './Navbar.css';
 
 const Navbar = () => {
@@ -13,11 +14,11 @@ const Navbar = () => {
     <header>
       <nav>
         <div className="logo">
-          <h1>Agrix</h1>
+          <img src={logo} alt="Agrix" className='logo-img'/>
         </div>
         <ul className="nav-links">
           <li><Link to='/'>Home</Link> </li>
-          <li><Link to='/about'>About</Link></li>
+        
           <li className="solutions-dropdown">
             <a href="#solutions" onClick={(e) => {
               e.preventDefault();
@@ -32,6 +33,7 @@ const Navbar = () => {
           </li>
           <li><Link to='/resouces'>Resources</Link></li>
           <li><Link to='/newsroom'>Newsroom</Link></li>
+          <li><Link to='/about'>About</Link></li>
           <li><Link to='/contact'>Contact</Link></li>
         </ul>
       </nav>
