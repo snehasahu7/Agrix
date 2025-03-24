@@ -114,7 +114,7 @@ const About = ()=>{
         slidesToShow: 1,
         slidesToScroll: 1,
         autoplay: true,
-        autoplaySpeed: 3000, // Changes slide every 3 seconds
+        autoplaySpeed: 2500, 
         arrows: false,
       };
     

@@ -14,7 +14,7 @@ const Navbar = () => {
     <header>
       <nav>
         <div className="logo">
-          <img src={logo} alt="Agrix" className='logo-img'/>
+          <Link to='/'><img src={logo} alt="Agrix" className='logo-img'/></Link> 
         </div>
         <ul className="nav-links">
           <li><Link to='/'>Home</Link> </li>

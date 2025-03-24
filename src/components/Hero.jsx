@@ -1,5 +1,6 @@
 import React from 'react';
 import './Hero.css';
+import { Link, useNavigate } from 'react-router-dom';
 import SocialSidebar from './SocialSidebar';
 
 const Hero = () => {
@@ -10,7 +11,7 @@ const Hero = () => {
         <div className="hero-content">
           <h1>Revolutionizing Agriculture Through Technology</h1>
           <p>Empowering farmers with cutting-edge solutions for sustainable and efficient farming</p>
-          <a href="#contact" className="cta-button">Get Started</a>
+          <Link to='/contact' className="cta-button">Get Started</Link>
         </div>
       </div>
     </section>

@@ -28,6 +28,7 @@ body {
 
 /* Buttons */
 .cta-button {
+  
   display: inline-block;
   padding: 1rem 2rem;
   background-color: #00b899;
@@ -37,6 +38,8 @@ body {
   transition: background-color 0.3s ease;
   border: none;
   cursor: pointer;
+  width: 160px;
+  height: 60px;
 }
 
 .cta-button:hover {
