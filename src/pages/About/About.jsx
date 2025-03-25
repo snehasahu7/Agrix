@@ -117,14 +117,42 @@ const About = ()=>{
         autoplaySpeed: 2500, 
         arrows: false,
       };
+
+      const headerVariants = {
+        hidden: { y: -50, opacity: 0 },
+        visible: {
+          y: 0,
+          opacity: 1,
+          transition: {
+            duration: 0.6,
+            ease: "easeOut"
+          }
+        }
+      };
+
+      const containerVariants = {
+        hidden: { opacity: 0 },
+        visible: {
+          opacity: 1,
+          transition: {
+            staggerChildren: 0.2,
+            delayChildren: 0.3
+          }
+        }
+      };
     
 
 
     return(
         <>
-            <div className="about-txt">
-                <p>Who are we?</p>
-            </div>
+            <motion.div
+             className="about-txt"
+             initial="hidden"
+             animate="visible"
+             variants={containerVariants}
+            >
+                <motion.p  variants={headerVariants}>Who are we?</motion.p>
+            </motion.div>
         
             <div className="about">
                             <motion.div 

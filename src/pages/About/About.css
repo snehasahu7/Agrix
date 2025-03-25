@@ -304,6 +304,11 @@ color: #00b899;
         gap: 80px;
     }
 
+    .about-txt p{
+        font-size: 45px;
+        font-weight: 600;
+    }
+
     .intropic {
         height: 400px;
         width: 600px;
@@ -333,6 +338,11 @@ color: #00b899;
         align-items: center;
         text-align: center;
         padding: 40px;
+    }
+
+    .about-txt p{
+        font-size: 40px;
+        font-weight: 500;
     }
 
     .intropic {
@@ -366,6 +376,10 @@ color: #00b899;
     .about {
         padding: 30px;
         margin-top: 60px;
+    }
+    .about-txt p{
+        font-size: 35px;
+        font-weight: 500;
     }
 
     .introtext span {
@@ -409,6 +423,10 @@ color: #00b899;
     .about {
         padding: 20px;
         margin-top: 40px;
+    }
+    .about-txt p{
+        font-size: 35px;
+        font-weight: 500;
     }
 
     .introtext span {
