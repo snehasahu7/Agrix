@@ -1,5 +1,5 @@
 header {
-  background-color: #ffffff;
+  background-color: #eff0f1;
   box-shadow: 0 2px 5px #0000001a;
   position: fixed;
   width: 100%;
@@ -26,8 +26,8 @@ nav {
 }
 
 .logo-img{
-  width: 110px;
-  height: 50px;
+  width: auto;
+  height: 60px;
 }
 
 .logo a {

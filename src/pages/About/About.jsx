@@ -122,7 +122,9 @@ const About = ()=>{
 
     return(
         <>
-          
+            <div className="about-txt">
+                <p>Who are we?</p>
+            </div>
         
             <div className="about">
                             <motion.div 
