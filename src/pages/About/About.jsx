@@ -272,7 +272,7 @@ const About = ()=>{
         variants={textVariants}
         className="investors">
              
-            <p className="header">Our Investors</p>
+            <p className="header">Business Partners</p>
             <motion.div
              whileInView={{opacity:1, y:0}}
              initial={{y:100, opacity:0}}

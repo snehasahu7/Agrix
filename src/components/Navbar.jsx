@@ -27,7 +27,7 @@ const Navbar = () => {
             {isDropdownOpen && (
               <ul className="dropdown-menu">
                 <li><Link to='/servicess' onClick={handleOptionClick}>Services</Link></li>
-                <li><Link to="/technology" onClick={handleOptionClick}>Technology</Link></li>
+                <li><Link to="/tech" onClick={handleOptionClick}>Technology</Link></li>
               </ul>
             )}
           </li>
