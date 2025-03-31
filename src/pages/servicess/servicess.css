@@ -1,0 +1,392 @@
+.Servicess-page {
+    padding: 80px 20px 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background: linear-gradient(180deg, #f8f9fa 0%, #ffffff 100%);
+}
+
+.Servicess-header {
+    text-align: center;
+    margin-bottom: 60px;
+    position: relative;
+}
+
+.Servicess-header h1 {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    margin-bottom: 15px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.Servicess-header h1:not(:first-child) {
+    color: #00b899;
+    font-size: 2.8rem;
+    margin: 40px 0;
+    border: none;
+    text-decoration: none;
+    border-bottom: none;
+}
+
+.Servicess-header h1:not(:first-child)::after,
+.Servicess-header h1:not(:first-child)::before,
+.Servicess-header h1:not(:first-child) > *::after,
+.Servicess-header h1:not(:first-child) > *::before {
+    content: none;
+    display: none;
+    border: none;
+    background: none;
+}
+
+
+.Servicess-header::after,
+.Servicess-header::before {
+    display: none;
+    content: none;
+    border: none;
+    background: none;
+}
+
+.Servicess-header p {
+    font-size: 1.2rem;
+    color: #666;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-top: 30px;
+    text-align: left;
+    flex-direction: row;
+    padding: 0 20px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.image-container {
+    flex: 0 0 50%;
+}
+
+.text-container {
+    flex: 0 0 50%;
+}
+
+.service-header-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.header-description {
+    font-size: 22px;
+    color: black;
+    line-height: 1.6;
+    background: #fff;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    border: 2px solid #2c3e50;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.header-description:hover {
+    background-color: rgba(144, 184, 0, 0.263);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 25px rgba(175, 184, 0, 0);
+    border-color:#666;
+}
+
+.header-description::before {
+    position: absolute;
+    top: -10px;
+    left: 20px;
+    font-size: 4rem;
+    color:#2c3e50;
+    opacity: 0.2;
+    font-family: Georgia, serif;
+}
+
+.header-description strong {
+    color:#2c3e50;
+    transition: all 0.3s ease;
+}
+
+.header-description:hover strong {
+    color:#00b899;
+}
+
+.scenarios-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    padding: 20px;
+}
+
+.scenario-card {
+    background: #fff;
+    border-radius: 15px;
+    padding: 20px 30px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    min-height: 100px;
+}
+
+.scenario-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+}
+
+.scenario-icon {
+    font-size: 2.5rem;
+    transition: all 0.3s ease;
+    flex-shrink: 0;
+}
+
+.scenario-card:hover .scenario-icon {
+    transform: scale(1.1);
+}
+
+.scenario-card h3 {
+    color: #2c3e50;
+    font-size: 1.3rem;
+    margin: 0;
+    font-weight: 600;
+    position: relative;
+    z-index: 1;
+    text-align: left;
+    flex: 1;
+}
+
+.scenario-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.farmers-heading {
+    color: #00b899;
+    font-size: 2.8rem;
+    margin: 40px 0;
+    font-weight: 700;
+    line-height: 1.2;
+    border: none;
+    text-decoration: none;
+    background: none;
+}
+
+.probsol-image-container, .offering-image-container {
+    margin: 60px auto 0;
+    flex: 0 0 50%;
+    max-width: 800px;
+    padding: 0 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.probsol-image, .offering-image {
+    width: 150%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    object-fit: contain;
+}
+
+.solutions-description {
+    text-align: center;
+    color: #2c3e50;
+    font-size: 1.3rem;
+    max-width: 1000px;
+    margin: 20px auto 40px;
+    line-height: 1.6;
+    padding: 0 25px;
+    font-weight: 500;
+    opacity: 0.9;
+}
+
+.solution-item {
+    text-align: left;
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 30px;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+}
+
+.solution-item + .solution-item {
+    margin-top: 60px;
+}
+
+.solution-title {
+    color:darkolivegreen;
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.solution-description {
+    color: #2c3e50;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.solution-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.1);
+}
+
+.solution-content {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.solution-image {
+    flex: 0 0 40%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.solution-text {
+    flex: 0 0 60%;
+    padding-right: 20px;
+}
+
+.machinery-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.machinery-image:hover {
+    transform: scale(1.02);
+}
+
+@media (max-width: 768px) {
+    .Servicess-page {
+        padding: 60px 15px 30px;
+    }
+
+    .Servicess-header h1 {
+        font-size: 2.2rem;
+    }
+
+    .Servicess-header p {
+        font-size: 1.1rem;
+    }
+
+    .scenarios-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 10px;
+    }
+
+    .scenario-card {
+        padding: 15px 20px;
+        min-height: 80px;
+    }
+
+    .scenario-content {
+        gap: 15px;
+    }
+
+    .scenario-icon {
+        font-size: 2rem;
+    }
+
+    .scenario-card h3 {
+        font-size: 1.1rem;
+    }
+
+    .header-content {
+        flex-direction: row;
+        gap: 20px;
+        padding: 0 10px;
+    }
+
+    .image-container {
+        flex: 0 0 45%;
+    }
+
+    .text-container {
+        flex: 0 0 55%;
+    }
+
+    .header-description {
+        font-size: 1rem;
+        padding: 20px;
+        border-width: 1.5px;
+    }
+
+    .Servicess-header h1:not(:first-child) {
+        font-size: 2.2rem;
+        margin: 30px 0;
+    }
+
+    .farmers-heading {
+        font-size: 2.2rem;
+        margin: 30px 0;
+    }
+
+    .probsol-image-container, .offering-image-container {
+        margin: 40px auto 0;
+        padding: 0 10px;
+        flex: 0 0 45%;
+    }
+
+    .probsol-image, .offering-image {
+        width: 35%;
+    }
+
+    .solutions-description {
+        font-size: 1.1rem;
+        padding: 0 20px;
+        margin: 15px auto 30px;
+    }
+
+    .solution-item + .solution-item {
+        margin-top: 40px;
+    }
+
+    .solution-title {
+        font-size: 1.5rem;
+    }
+
+    .solution-description {
+        font-size: 1.1rem;
+    }
+
+    .solution-content {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .solution-text, .solution-image {
+        flex: 0 0 100%;
+        padding-right: 0;
+    }
+
+    .machinery-image {
+        width: 100%;
+        margin: 0 auto;
+    }
+}
