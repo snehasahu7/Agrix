@@ -200,22 +200,97 @@ const About = ()=>{
 
         </div>
 
-        <motion.div 
-                className="journey" 
-                initial="hidden"
-                whileInView="visible"
-                viewport={{ once: true }}
-                variants={textVariants}>
-             <p className="header">Our History</p>
-             <motion.p className="journeytxt"
-             whileInView={{opacity:1, x:0}}
-             initial={{x:-100, opacity:0}}
-             transition={{duratiion:1}}>From revolutionizing farming to empowering thousands, our journey is built on innovation, resilience, and impact.</motion.p>
-             <motion.div  whileInView={{opacity:1, x:0}}
-                  initial={{x:100, opacity:0}}
-                  transition={{duratiion:1.5}}><img src={journeypic} className="journey-img" />
-                  </motion.div>
-        </motion.div>
+        <div className="journey-section">
+  <h2>Our Journey</h2>
+  
+  <div className="timeline">
+    <div className="timeline-container">
+      <motion.div 
+        className="timeline-item"
+        initial={{ opacity: 0, x: -50 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        viewport={{ once: true }}
+      >
+        <div className="date">Early life</div>
+        <div className="content">
+          <p>Nilay's story-Grew up in a small village in Bihar in a Teacher's family – spending most of his time roaming around the farms.</p>
+        </div>
+      </motion.div>
+
+      <motion.div 
+        className="timeline-item"
+        initial={{ opacity: 0, x:50 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        viewport={{ once: true }}
+      >
+        <div className="date">2002</div>
+        <div className="content">
+          <p>Leaves his village as his parents move to a nearby town. Keeps visiting his village regularly on vacations.</p>
+        </div>
+      </motion.div>
+
+      <motion.div 
+        className="timeline-item"
+        initial={{ opacity: 0, x: -50 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        viewport={{ once: true }}
+      >
+        <div className="date">2008-2012</div>
+        <div className="content">
+          <p>Leaves Bihar for higher studies.Graduates, joins Infosys for a brief time. Joins NIT Rourkela for an MTech in Signal & Image Processing. Works on image-based plant phenomics.</p>
+        </div>
+      </motion.div>
+
+      <motion.div 
+        className="timeline-item"
+        initial={{ opacity: 0, x: 50 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        viewport={{ once: true }}
+      >
+        <div className="date">2014-2015</div>
+        <div className="content">
+          <p>Completes his MTech, starts working as a senior research fellow.Joins IIT Delhi to pursue his Ph.D</p>
+        </div>
+      </motion.div>
+
+      <motion.div 
+        className="timeline-item"
+        initial={{ opacity: 0, x: -50 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        viewport={{ once: true }}
+      >
+        <div className="date">2016-2017</div>
+        <div className="content">
+          <p>Revisited his village after 8 years. He found his village deserted as farming lost its appeal. This inspired him to explore tech-driven solutions and idea to employ tech in farming.</p>
+        </div>
+      </motion.div>
+
+      <motion.div 
+        className="timeline-item"
+        initial={{ opacity: 0, x: 50 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        viewport={{ once: true }}
+      >
+        <div className="date">2019</div>
+        <div className="content">
+          <p>Met Saurav and Vivek at IIT DElhi, bonding over shared farming challenges. Launched a 1-acre pilot project, facing delays in hiring a tractor and seed procurement.</p>
+        </div>
+      </motion.div>
+
+      <motion.div 
+        className="timeline-item"
+        initial={{ opacity: 0, x: -50 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        viewport={{ once: true }}
+      >
+        <div className="date">2020</div>
+        <div className="content">
+          <p>Agrix is registered, with first operational cluster in Nawada, Bihar.</p>
+        </div>
+      </motion.div>
+    </div>
+  </div>
+</div>
 
         <div className="founder">
             <motion.p className="header"
