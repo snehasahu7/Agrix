@@ -118,8 +118,11 @@ const Servicess = () => {
                         transition={{ duration: 0.6, delay: 0.4 }}
                     >
                         <p className="header-description">
-                            <strong>Agrix</strong> engages directly with farmers in India, providing a 360-degree service from land 
-                            preparation to market linkage. Our services encompass high-quality inputs, advanced machinery, and digital tools to optimize farm operations and data collection. By forming farming clusters, Agrix facilitates accessible and bankable farm mechanization, ensures the availability of premium agri-inputs, enables digital plot mapping, and streamlines efficient market linkage for small and marginal farmers at affordable prices.
+                            <strong>Agrix</strong>  engages directly with farmers in India, providing a 360-degree service from land 
+preparation to market linkage. This includes inputs, machinery, and digitizing processes to 
+optimize operations and data collection. Agrix creates farming clusters to ensure bankable farm mechanization, quality agri-inputs, digital plot mapping and efficient market linkage to small and marginal farmers at affordable pricing. It focuses on small farmers and uses cluster modeling to consolidate fragmented lands. 
+This improves efficiency and bargaining power while providing tailored support to farmers 
+from inputs to outputs.
                         </p>
                     </motion.div>
                 </motion.div>

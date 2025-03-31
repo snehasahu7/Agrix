@@ -1,20 +1,21 @@
 .Servicess-page {
-    padding: 80px 20px 40px;
+    padding: 150px 20px 40px;
     max-width: 1200px;
     margin: 0 auto;
-    background: linear-gradient(180deg, #f8f9fa 0%, #ffffff 100%);
+    background: #ffffff;
+    min-height: 100vh;
 }
 
 .Servicess-header {
     text-align: center;
-    margin-bottom: 60px;
+    margin-bottom: 100px;
     position: relative;
 }
 
 .Servicess-header h1 {
-    font-size: 2.5rem;
+    font-size: 2.8rem;
     color: #2c3e50;
-    margin-bottom: 15px;
+    margin-bottom: 40px; 
     font-weight: 700;
     line-height: 1.2;
 }
@@ -28,38 +29,21 @@
     border-bottom: none;
 }
 
-.Servicess-header h1:not(:first-child)::after,
-.Servicess-header h1:not(:first-child)::before,
-.Servicess-header h1:not(:first-child) > *::after,
-.Servicess-header h1:not(:first-child) > *::before {
-    content: none;
-    display: none;
-    border: none;
-    background: none;
-}
-
-
-.Servicess-header::after,
-.Servicess-header::before {
-    display: none;
-    content: none;
-    border: none;
-    background: none;
-}
-
 .Servicess-header p {
     font-size: 1.2rem;
     color: #666;
-    max-width: 600px;
+    max-width: 800px;
     margin: 0 auto;
-    line-height: 1.6;
+    line-height: 1.8; 
+    margin-bottom: 40px; 
 }
+
 
 .header-content {
     display: flex;
-    align-items: center;
-    gap: 40px;
-    margin-top: 30px;
+    align-items: flex-start;
+    gap: 60px;
+    margin-top: 60px;
     text-align: left;
     flex-direction: row;
     padding: 0 20px;
@@ -70,25 +54,29 @@
 
 .image-container {
     flex: 0 0 50%;
+    margin-bottom: 20px; 
 }
 
 .text-container {
     flex: 0 0 50%;
+    margin-bottom: 20px; 
 }
-
 .service-header-image {
-    width: 100%;
+    width: 105%;
     height: auto;
     border-radius: 10px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    margin-top: 40px;
+    margin-bottom: 20px;
 }
 
 .header-description {
+    margin-top: 40px;
     font-size: 22px;
     color: black;
     line-height: 1.6;
     background: #fff;
-    padding: 25px;
+    padding: 35px;
     border-radius: 15px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
     border: 2px solid #2c3e50;
@@ -96,23 +84,13 @@
     transition: all 0.3s ease;
 }
 
+
 .header-description:hover {
     background-color: rgba(144, 184, 0, 0.263);
     transform: translateY(-2px);
     box-shadow: 0 6px 25px rgba(175, 184, 0, 0);
     border-color:#666;
 }
-
-.header-description::before {
-    position: absolute;
-    top: -10px;
-    left: 20px;
-    font-size: 4rem;
-    color:#2c3e50;
-    opacity: 0.2;
-    font-family: Georgia, serif;
-}
-
 .header-description strong {
     color:#2c3e50;
     transition: all 0.3s ease;
@@ -125,14 +103,15 @@
 .scenarios-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
-    padding: 20px;
+    gap: 30px; 
+    padding: 30px;
+    margin-top: 20px; 
 }
 
 .scenario-card {
     background: #fff;
-    border-radius: 15px;
-    padding: 20px 30px;
+    border-radius: 30px;
+    padding: 30px; 
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
     transition: all 0.3s ease;
     border: 1px solid rgba(0, 0, 0, 0.05);
@@ -140,7 +119,8 @@
     align-items: center;
     position: relative;
     overflow: hidden;
-    min-height: 100px;
+    min-height: 100px; 
+    margin-bottom: 30px; 
 }
 
 .scenario-content {
@@ -162,7 +142,7 @@
 
 .scenario-card h3 {
     color: #2c3e50;
-    font-size: 1.3rem;
+    font-size: 1.5rem; 
     margin: 0;
     font-weight: 600;
     position: relative;
@@ -179,7 +159,7 @@
 .farmers-heading {
     color: #00b899;
     font-size: 2.8rem;
-    margin: 40px 0;
+    margin: 30px 0; 
     font-weight: 700;
     line-height: 1.2;
     border: none;
@@ -188,9 +168,9 @@
 }
 
 .probsol-image-container, .offering-image-container {
-    margin: 60px auto 0;
-    flex: 0 0 50%;
-    max-width: 800px;
+    margin: 80px auto 0;
+    flex: 0 0 60%;
+    max-width: 1000px;
     padding: 0 20px;
     display: flex;
     justify-content: center;
@@ -198,11 +178,12 @@
 }
 
 .probsol-image, .offering-image {
-    width: 150%;
+    width: 120%;
     height: auto;
     border-radius: 10px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
     object-fit: contain;
+    margin-bottom: 50px;
 }
 
 .solutions-description {
@@ -210,8 +191,8 @@
     color: #2c3e50;
     font-size: 1.3rem;
     max-width: 1000px;
-    margin: 20px auto 40px;
-    line-height: 1.6;
+    margin: 20px auto 60px; 
+    line-height: 1.5;
     padding: 0 25px;
     font-weight: 500;
     opacity: 0.9;
@@ -220,29 +201,30 @@
 .solution-item {
     text-align: left;
     max-width: 1000px;
-    margin: 40px auto;
-    padding: 30px;
+    margin: 60px auto;
+    padding: 40px; 
     background: #fff;
     border-radius: 15px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
     transition: all 0.3s ease;
+    margin-bottom: 50px; 
 }
 
 .solution-item + .solution-item {
-    margin-top: 60px;
+    margin-top: 70px; 
 }
 
 .solution-title {
-    color:darkolivegreen;
-    font-size: 1.8rem;
-    margin-bottom: 15px;
+    color:#2c3e50;
+    font-size: 1.9rem;
+    margin-bottom: 20px; 
     font-weight: 600;
 }
 
 .solution-description {
     color: #2c3e50;
-    font-size: 1.2rem;
-    line-height: 1.6;
+    font-size: 1.3rem;
+    line-height: 1.8; 
     margin: 0;
 }
 
@@ -281,6 +263,30 @@
     transform: scale(1.02);
 }
 
+.farmers-section {
+    margin: 100px 0;
+    padding: 0 20px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.farmers-heading {
+    color: #00b899;
+    font-size: 2.8rem;
+    margin: 0 0 60px;
+    font-weight: 700;
+    line-height: 1.2;
+    text-align: center;
+}
+
+.scenarios-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    padding: 30px;
+}
+
 @media (max-width: 768px) {
     .Servicess-page {
         padding: 60px 15px 30px;
@@ -296,97 +302,61 @@
 
     .scenarios-grid {
         grid-template-columns: 1fr;
-        gap: 20px;
-        padding: 10px;
+        gap: 30px;
+        padding: 15px;
     }
 
     .scenario-card {
-        padding: 15px 20px;
-        min-height: 80px;
-    }
-
-    .scenario-content {
-        gap: 15px;
-    }
-
-    .scenario-icon {
-        font-size: 2rem;
-    }
-
-    .scenario-card h3 {
-        font-size: 1.1rem;
+        padding: 20px;
+        min-height: 100px;
     }
 
     .header-content {
-        flex-direction: row;
-        gap: 20px;
-        padding: 0 10px;
+        flex-direction: column;
+        gap: 30px; 
     }
 
     .image-container {
-        flex: 0 0 45%;
+        flex: 0 0 100%;
+        margin-bottom: 40px; 
     }
 
     .text-container {
-        flex: 0 0 55%;
+        flex: 0 0 100%;
     }
 
     .header-description {
-        font-size: 1rem;
-        padding: 20px;
-        border-width: 1.5px;
+        font-size: 1.2rem;
+        padding: 25px;
+        margin-bottom: 40px;
     }
 
-    .Servicess-header h1:not(:first-child) {
-        font-size: 2.2rem;
-        margin: 30px 0;
+    .solution-item {
+        margin: 60px auto;
+        padding: 25px;
+    }
+
+    .probsol-image-container, .offering-image-container {
+        flex: 0 0 90%;
+        max-width: 600px;
+    }
+
+    .probsol-image, .offering-image {
+        width: 100%;
+    }
+
+    .farmers-section {
+        margin: 60px 0;
+        padding: 0 15px;
     }
 
     .farmers-heading {
         font-size: 2.2rem;
-        margin: 30px 0;
+        margin-bottom: 40px;
     }
 
-    .probsol-image-container, .offering-image-container {
-        margin: 40px auto 0;
-        padding: 0 10px;
-        flex: 0 0 45%;
-    }
-
-    .probsol-image, .offering-image {
-        width: 35%;
-    }
-
-    .solutions-description {
-        font-size: 1.1rem;
-        padding: 0 20px;
-        margin: 15px auto 30px;
-    }
-
-    .solution-item + .solution-item {
-        margin-top: 40px;
-    }
-
-    .solution-title {
-        font-size: 1.5rem;
-    }
-
-    .solution-description {
-        font-size: 1.1rem;
-    }
-
-    .solution-content {
-        flex-direction: column;
-        gap: 20px;
-    }
-
-    .solution-text, .solution-image {
-        flex: 0 0 100%;
-        padding-right: 0;
-    }
-
-    .machinery-image {
-        width: 100%;
-        margin: 0 auto;
+    .scenarios-grid {
+        gap: 30px;
+        padding: 15px;
     }
 }
