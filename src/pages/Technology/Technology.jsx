@@ -1,12 +1,14 @@
 import React from "react";
 import { motion } from "framer-motion";
+import AgrixPlots from "../../assets/Agrix Plots (1).jpg";
+import tracking from "../../assets/Tracking-1.jpg"
 import "./Technology.css";
 
 const Technology = () => {
   return (
     <div className="technology-container">
       <section className="hero-section">
-        <div className="hero-contentt">
+        <div className="hero-content">
           <div className="hero-text">
             <motion.h1
             initial={{ opacity: 0, y: 20 }}
@@ -148,28 +150,65 @@ const Technology = () => {
 
 
 <section className="satellite-section">
-  <motion.div
-    className="section-header"
-    initial={{ opacity: 0, y: 30 }}
-    whileInView={{ opacity: 1, y: 0 }}
-    viewport={{ once: true }}
-    transition={{ duration: 0.7 }}
-  >
-    <h2 className="section-title">Precision Mapping</h2>
-  </motion.div>
+  <div className="precision-mapping">
+    <motion.div 
+      className="section-header"
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+    >
+      <h2>Smart Field Intelligence</h2>
+      <p className="subtitle">Advanced satellite monitoring and field tracking</p>
+    </motion.div>
 
-  <motion.div 
-    className="satellite-content"
-    initial={{ opacity: 0, y: 50 }}
-    whileInView={{ opacity: 1, y: 0 }}
-    viewport={{ once: true }}
-    transition={{ duration: 0.7 }}
-  >
-    <div className="satellite-image">
-      <img src="." alt="Satellite Mapping" />
+    <div className="mapping-content">
+      <motion.div 
+        className="mapping-text"
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+      >
+        <p>Our advanced mapping system provides comprehensive field monitoring and management capabilities. Through detailed satellite imagery and GPS tracking, we've mapped over 15,000+ acres across Bihar, with each plot precisely identified and monitored. The blue markers represent individual farmer plots under Agrix management, while the detailed area mapping (shown in blue) demonstrates our cluster-based approach in regions like Gazipur.</p>
+        <p>This technology enables us to:</p>
+        <ul>
+          <li>Track and monitor individual farmer plots with unique IDs</li>
+          <li>Manage farming clusters efficiently through geospatial data</li>
+          <li>Provide precise location-based services and support</li>
+          <li>Monitor crop health and field conditions in real-time</li>
+        </ul>
+      </motion.div>
+
+      <div className="mapping-images">
+        <motion.div 
+          className="image-container"
+          initial={{ opacity: 0, scale: 0.95 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          viewport={{ once: true }}
+        >
+          <img 
+            src={AgrixPlots} 
+            alt="Field tracking map showing multiple farmer plots with unique IDs" 
+            className="mapping-image"
+          />
+          <p className="image-caption">Plot-level tracking system with unique farmer IDs</p>
+        </motion.div>
+
+        <motion.div 
+          className="image-container"
+          initial={{ opacity: 0, scale: 0.95 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          viewport={{ once: true }}
+        >
+          <img 
+            src={tracking}
+            alt="Satellite view of Gazipur cluster showing managed agricultural land" 
+            className="mapping-image"
+          />
+          <p className="image-caption">Cluster visualization of managed farmland in Ghajipur region</p>
+        </motion.div>
+      </div>
     </div>
-    <p> Agrix precisely tracks and monitors land cultivation progress across fields where our agricultural vehicles operate. This real-time mapping system provides detailed insights into cultivated areas, helping farmers monitor implementation efficiency and coverage. By analyzing satellite data, we can accurately measure the total land cultivated by Agrix machinery, ensure optimal vehicle utilization, and verify that farming operations are executed according to plan, ultimately maximizing productivity and resource management.</p>
-  </motion.div>
+  </div>
 </section>
 
 
