@@ -2,6 +2,10 @@ import React from "react";
 import { motion } from "framer-motion";
 import AgrixPlots from "../../assets/Agrix Plots (1).jpg";
 import tracking from "../../assets/Tracking-1.jpg"
+import sprayer from "../../assets/sprayer.png";
+import tractor from "../../assets/tractor.png";
+import cagewheel from "../../assets/cagewheel.png";
+import thresher from "../../assets/thresher.png";
 import "./Technology.css";
 
 const Technology = () => {
@@ -22,7 +26,7 @@ const Technology = () => {
           </div>
         </div>
       </section>
- {/* Features Section */}
+
       <section className="features-section">
         <div className="headerss"><p>Comprehensive Farm Management</p></div>
         
@@ -61,10 +65,6 @@ const Technology = () => {
           </motion.div>
         </div>
       </section>
-
-
-      <div className="technology-container">
-      {/* Previous sections remain the same */}
 
       <section className="smart-tech-section">
         <motion.h2
@@ -145,227 +145,426 @@ const Technology = () => {
       </motion.div>
     </div>
   </section>
-</div>
-
-
-
-<section className="satellite-section">
-  <div className="precision-mapping">
-    <motion.div 
+<section className="implements-section">
+    <motion.div
       className="section-header"
-      initial={{ opacity: 0, y: 50 }}
+      initial={{ opacity: 0, y: 30 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
+      transition={{ duration: 0.6 }}
     >
-      <h2>Smart Field Intelligence</h2>
-      <p className="subtitle">Advanced satellite monitoring and field tracking</p>
+      <motion.h2 
+        initial={{ opacity: 0, scale: 0.9 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.5, delay: 0.2 }}
+      >
+        Next-Gen Farm Equipment
+      </motion.h2>
+      <motion.p 
+        className="section-description"
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.5, delay: 0.3 }}
+      >
+        Discover our precision-engineered farm equipment that combines cutting-edge technology with robust design. From GPS-guided sprayers to automated tractors, our implements enhance efficiency, reduce costs, and maximize yields, transforming traditional farming into a modern, technology-driven industry.
+      </motion.p>
     </motion.div>
 
-    <div className="mapping-content">
+    <div className="implements-grid">
+      {/* Sprayer System */}
+      <motion.div className="implement-card">
+        <motion.div className="implement-image">
+          <img src={sprayer} alt="Advanced Sprayer System" />
+        </motion.div>
+        <div className="implement-content">
+          <h3>Smart Sprayer</h3>
+          <p>Precision spraying system with GPS guidance and automated pressure control for optimal coverage.</p>
+          <ul className="implement-features">
+            <li>GPS-guided spraying</li>
+            <li>Pressure optimization</li>
+            <li>Terrain adaptation</li>
+          </ul>
+        </div>
+      </motion.div>
+
+      {/* Tractor System */}
+      <motion.div className="implement-card">
+        <motion.div className="implement-image">
+          <img src={tractor} alt="Smart Tractor System" />
+        </motion.div>
+        <div className="implement-content">
+          <h3>Power Tractor</h3>
+          <p>Advanced tractor with smart power management and precision steering for optimal performance.</p>
+          <ul className="implement-features">
+            <li>Smart power control</li>
+            <li>Auto-steering</li>
+            <li>Fuel optimization</li>
+          </ul>
+        </div>
+      </motion.div>
+
+      {/* Cage Wheel System */}
+      <motion.div className="implement-card">
+        <motion.div className="implement-image">
+          <img src={cagewheel} alt="Cage Wheel System" />
+        </motion.div>
+        <div className="implement-content">
+          <h3>Grip Wheels</h3>
+          <p>High-performance wheels designed for maximum traction with quick-mount system.</p>
+          <ul className="implement-features">
+            <li>Enhanced grip</li>
+            <li>Quick installation</li>
+            <li>All-weather design</li>
+          </ul>
+        </div>
+      </motion.div>
+
+      {/* Thresher System */}
+      <motion.div className="implement-card">
+        <motion.div className="implement-image">
+          <img src={thresher} alt="Advanced Thresher" />
+        </motion.div>
+        <div className="implement-content">
+          <h3>Smart Thresher</h3>
+          <p>Efficient threshing system with automated grain separation and quality preservation.</p>
+          <ul className="implement-features">
+            <li>Auto separation</li>
+            <li>Quality control</li>
+            <li>High capacity</li>
+          </ul>
+        </div>
+      </motion.div>
+    </div>
+  </section>
+
+  <section className="satellite-section">
+    <div className="precision-mapping">
       <motion.div 
-        className="mapping-text"
+        className="section-header"
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
       >
-        <p>Our advanced mapping system provides comprehensive field monitoring and management capabilities. Through detailed satellite imagery and GPS tracking, we've mapped over 15,000+ acres across Bihar, with each plot precisely identified and monitored. The blue markers represent individual farmer plots under Agrix management, while the detailed area mapping (shown in blue) demonstrates our cluster-based approach in regions like Gazipur.</p>
-        <p>This technology enables us to:</p>
-        <ul>
-          <li>Track and monitor individual farmer plots with unique IDs</li>
-          <li>Manage farming clusters efficiently through geospatial data</li>
-          <li>Provide precise location-based services and support</li>
-          <li>Monitor crop health and field conditions in real-time</li>
-        </ul>
+        <h2>Smart Field Intelligence</h2>
+        <p className="subtitle">Advanced satellite monitoring and field tracking</p>
       </motion.div>
 
-      <div className="mapping-images">
+      <div className="mapping-content">
         <motion.div 
-          className="image-container"
-          initial={{ opacity: 0, scale: 0.95 }}
-          whileInView={{ opacity: 1, scale: 1 }}
+          className="mapping-text"
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
         >
-          <img 
-            src={AgrixPlots} 
-            alt="Field tracking map showing multiple farmer plots with unique IDs" 
-            className="mapping-image"
-          />
-          <p className="image-caption">Plot-level tracking system with unique farmer IDs</p>
+          <p>Our advanced mapping system provides comprehensive field monitoring and management capabilities. Through detailed satellite imagery and GPS tracking, we've mapped over 15,000+ acres across Bihar, with each plot precisely identified and monitored. The blue markers represent individual farmer plots under Agrix management, while the detailed area mapping (shown in blue) demonstrates our cluster-based approach in regions like Gazipur.</p>
+          <p>This technology enables us to:</p>
+          <ul>
+            <li>Track and monitor individual farmer plots with unique IDs</li>
+            <li>Manage farming clusters efficiently through geospatial data</li>
+            <li>Provide precise location-based services and support</li>
+            <li>Monitor crop health and field conditions in real-time</li>
+          </ul>
         </motion.div>
 
-        <motion.div 
-          className="image-container"
-          initial={{ opacity: 0, scale: 0.95 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          viewport={{ once: true }}
-        >
-          <img 
-            src={tracking}
-            alt="Satellite view of Gazipur cluster showing managed agricultural land" 
-            className="mapping-image"
-          />
-          <p className="image-caption">Cluster visualization of managed farmland in Ghajipur region</p>
-        </motion.div>
+        <div className="mapping-images">
+          <motion.div 
+            className="image-container"
+            initial={{ opacity: 0, scale: 0.95 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true }}
+          >
+            <img 
+              src={AgrixPlots} 
+              alt="Field tracking map showing multiple farmer plots with unique IDs" 
+              className="mapping-image"
+            />
+            <p className="image-caption">Plot-level tracking system with unique farmer IDs</p>
+          </motion.div>
+
+          <motion.div 
+            className="image-container"
+            initial={{ opacity: 0, scale: 0.95 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true }}
+          >
+            <img 
+              src={tracking}
+              alt="Satellite view of Gazipur cluster showing managed agricultural land" 
+              className="mapping-image"
+            />
+            <p className="image-caption">Cluster visualization of managed farmland in Ghajipur region</p>
+          </motion.div>
+        </div>
       </div>
     </div>
-  </div>
-</section>
-
+  </section>
 
   
-    
-
-     
-
-
-
-{/* Mobile Apps Section */}
-<section className="mobile-apps-section">
-  <motion.h2
-    className="section-title"
-    initial={{ opacity: 0, y: 30 }}
-    whileInView={{ opacity: 1, y: 0 }}
-    viewport={{ once: true }}
-    transition={{ duration: 0.7 }}
-  >
-    Agrix App Ecosystem
-  </motion.h2>
-
-  {/* <div className="mobile-apps-container"> 
-    {/* Farmer App 
-    <motion.div 
-      className="mobile-card"
-      initial={{ opacity: 0, y: 50 }}
+  <section className="mobile-apps-section">
+    <motion.div
+      className="section-header"
+      initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
-      transition={{ duration: 0.7 }}
+      transition={{ duration: 0.5 }}
     >
-      <div className="phone-frame">
-        <div className="phone-header">
-          <div className="phone-notch"></div>
-        </div>
-        <div className="app-content">
-          <div className="app-icon">
-            <i className="fas fa-user-farmer"></i>
-          </div>
-          <h3>Farmer App</h3>
-          <p>Complete farm management in your pocket</p>
-          <div className="app-features">
-            <div className="feature">
-              <i className="fas fa-chart-line"></i>
-              <span>Crop Monitoring</span>
-            </div>
-            <div className="feature">
-              <i className="fas fa-cloud-sun"></i>
-              <span>Weather Updates</span>
-            </div>
-            <div className="feature">
-              <i className="fas fa-tasks"></i>
-              <span>Task Management</span>
-            </div>
-          </div>
-        </div>
-      </div>
+      <motion.h2 
+        className="section-title"
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.5, delay: 0.2 }}
+      >
+        Agrix App Ecosystem
+      </motion.h2>
+      <motion.p 
+        className="section-description"
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.5, delay: 0.3 }}
+      >
+        Our integrated suite of mobile applications empowers agricultural operations with seamless connectivity, real-time tracking, and efficient marketplace solutions. Each app is designed to address specific needs in the agricultural value chain.
+      </motion.p>
     </motion.div>
 
-    {/* Field Monitor App 
-    <motion.div 
-      className="mobile-card"
-      initial={{ opacity: 0, y: 50 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true }}
-      transition={{ duration: 0.7, delay: 0.2 }}
-    >
-      <div className="phone-frame">
-        <div className="phone-header">
-          <div className="phone-notch"></div>
-        </div>
-        <div className="app-content">
-          <div className="app-icon">
-            <i className="fas fa-map-marked-alt"></i>
+    <div className="mobile-apps-container">
+      {/* Driver App */}
+      <motion.div 
+        className="mobile-card"
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.5, delay: 0.4 }}
+      >
+        <motion.div 
+          className="phone-frame"
+          whileHover={{ y: -10 }}
+          transition={{ type: "spring", stiffness: 300 }}
+        >
+          <div className="phone-header">
+            <div className="phone-notch"></div>
           </div>
-          <h3>Field Monitor</h3>
-          <p>Real-time field insights and analytics</p>
-          <div className="app-features">
-            <div className="feature">
-              <i className="fas fa-seedling"></i>
-              <span>Crop Health</span>
-            </div>
-            <div className="feature">
-              <i className="fas fa-tint"></i>
-              <span>Irrigation Control</span>
-            </div>
-            <div className="feature">
-              <i className="fas fa-bug"></i>
-              <span>Pest Alerts</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </motion.div>
-
-    {/* Market Connect App 
-    <motion.div 
-      className="mobile-card"
-      initial={{ opacity: 0, y: 50 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true }}
-      transition={{ duration: 0.7, delay: 0.4 }}
-    >
-      <div className="phone-frame">
-        <div className="phone-header">
-          <div className="phone-notch"></div>
-        </div>
-        <div className="app-content">
-          <div className="app-icon">
-            <i className="fas fa-store"></i>
-          </div>
-          <h3>Market Connect</h3>
-          <p>Direct access to agricultural marketplace</p>
-          <div className="app-features">
-            <div className="feature">
-              <i className="fas fa-shopping-cart"></i>
-              <span>Buy/Sell Produce</span>
-            </div>
-            <div className="feature">
-              <i className="fas fa-chart-bar"></i>
-              <span>Price Analytics</span>
-            </div>
-            <div className="feature">
+          <motion.div 
+            className="app-content"
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, delay: 0.5 }}
+          >
+            <motion.div 
+              className="app-icon"
+              whileHover={{ scale: 1.1 }}
+              transition={{ type: "spring", stiffness: 300 }}
+            >
               <i className="fas fa-truck"></i>
-              <span>Logistics</span>
+            </motion.div>
+            <h3>Agrix Driver App</h3>
+            <p>Machine and driver management system</p>
+            <div className="app-features">
+              <motion.div 
+                className="feature"
+                whileHover={{ y: -5 }}
+                transition={{ type: "spring", stiffness: 300 }}
+              >
+                <i className="fas fa-id-card"></i>
+                <span>Machine ID</span>
+              </motion.div>
+              <motion.div 
+                className="feature"
+                whileHover={{ y: -5 }}
+                transition={{ type: "spring", stiffness: 300 }}
+              >
+                <i className="fas fa-layer-group"></i>
+                <span>Cluster ID</span>
+              </motion.div>
+              <motion.div 
+                className="feature"
+                whileHover={{ y: -5 }}
+                transition={{ type: "spring", stiffness: 300 }}
+              >
+                <i className="fas fa-tools"></i>
+                <span>Attachment ID</span>
+              </motion.div>
+              <motion.div 
+                className="feature"
+                whileHover={{ y: -5 }}
+                transition={{ type: "spring", stiffness: 300 }}
+              >
+                <i className="fas fa-user"></i>
+                <span>Driver ID</span>
+              </motion.div>
             </div>
+          </motion.div>
+        </motion.div>
+      </motion.div>
+
+      {/* Implement Tracking App */}
+      <motion.div 
+        className="mobile-card"
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.5, delay: 0.5 }}
+      >
+        <motion.div 
+          className="phone-frame"
+          whileHover={{ y: -10 }}
+          transition={{ type: "spring", stiffness: 300 }}
+        >
+          <div className="phone-header">
+            <div className="phone-notch"></div>
           </div>
-        </div>
+          <motion.div 
+            className="app-content"
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, delay: 0.6 }}
+          >
+            <motion.div 
+              className="app-icon"
+              whileHover={{ scale: 1.1 }}
+              transition={{ type: "spring", stiffness: 300 }}
+            >
+              <i className="fas fa-map-marked-alt"></i>
+            </motion.div>
+            <h3>Implement Tracking</h3>
+            <p>Real-time machine tracking and monitoring</p>
+            <div className="app-features">
+              <motion.div 
+                className="feature"
+                whileHover={{ y: -5 }}
+                transition={{ type: "spring", stiffness: 300 }}
+              >
+                <i className="fas fa-location-arrow"></i>
+                <span>Live Tracking</span>
+              </motion.div>
+              <motion.div 
+                className="feature"
+                whileHover={{ y: -5 }}
+                transition={{ type: "spring", stiffness: 300 }}
+              >
+                <i className="fas fa-map"></i>
+                <span>Cluster Mapping</span>
+              </motion.div>
+              <motion.div 
+                className="feature"
+                whileHover={{ y: -5 }}
+                transition={{ type: "spring", stiffness: 300 }}
+              >
+                <i className="fas fa-clock"></i>
+                <span>Real-time Updates</span>
+              </motion.div>
+              <motion.div 
+                className="feature"
+                whileHover={{ y: -5 }}
+                transition={{ type: "spring", stiffness: 300 }}
+              >
+                <i className="fas fa-route"></i>
+                <span>Route History</span>
+              </motion.div>
+            </div>
+          </motion.div>
+        </motion.div>
+      </motion.div>
+
+      {/* Market Place App */}
+      <motion.div 
+        className="mobile-card"
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.5, delay: 0.6 }}
+      >
+        <motion.div 
+          className="phone-frame"
+          whileHover={{ y: -10 }}
+          transition={{ type: "spring", stiffness: 300 }}
+        >
+          <div className="phone-header">
+            <div className="phone-notch"></div>
+          </div>
+          <motion.div 
+            className="app-content"
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, delay: 0.7 }}
+          >
+            <motion.div 
+              className="app-icon"
+              whileHover={{ scale: 1.1 }}
+              transition={{ type: "spring", stiffness: 300 }}
+            >
+              <i className="fas fa-store"></i>
+            </motion.div>
+            <h3>Market Place</h3>
+            <p>Digital platform for cluster level business</p>
+            <div className="app-features">
+              <motion.div 
+                className="feature"
+                whileHover={{ y: -5 }}
+                transition={{ type: "spring", stiffness: 300 }}
+              >
+                <i className="fas fa-shopping-cart"></i>
+                <span>Product Catalog</span>
+              </motion.div>
+              <motion.div 
+                className="feature"
+                whileHover={{ y: -5 }}
+                transition={{ type: "spring", stiffness: 300 }}
+              >
+                <i className="fas fa-handshake"></i>
+                <span>Bookings</span>
+              </motion.div>
+              <motion.div 
+                className="feature"
+                whileHover={{ y: -5 }}
+                transition={{ type: "spring", stiffness: 300 }}
+              >
+                <i className="fas fa-chart-line"></i>
+                <span>Business Analytics</span>
+              </motion.div>
+              <motion.div 
+                className="feature"
+                whileHover={{ y: -5 }}
+                transition={{ type: "spring", stiffness: 300 }}
+              >
+                <i className="fas fa-digital-tachograph"></i>
+                <span>Digital Records</span>
+              </motion.div>
+            </div>
+          </motion.div>
+        </motion.div>
+      </motion.div>
+    </div>
+  </section>
+
+  <section className="impact-section">
+    <h2>Our Impact</h2>
+    <div className="impact-stats">
+      <div className="stat-card">
+      <h3>40%</h3>
+      <p>Efficiency Gains</p>
       </div>
-    </motion.div>
-  </div>*/}
-</section>
+      <div className="stat-card">
+      <h3>12,000+</h3>
+      <p>Farmers Empowered</p>
+      </div>
+      <div className="stat-card">
+        <h3>10+</h3>
+        <p>Cluster Networks</p>
+      </div>
+    </div>
+  </section>
 
-      {/* Impact Section */}
-      <section className="impact-section">
-        <h2>Our Impact</h2>
-        <div className="impact-stats">
-          <div className="stat-card">
-          <h3>40%</h3>
-          <p>Efficiency Gains</p>
-          </div>
-          <div className="stat-card">
-          <h3>12,000+</h3>
-          <p>Farmers Empowered</p>
-          </div>
-          <div className="stat-card">
-            <h3>10+</h3>
-            <p>Cluster Networks</p>
-          </div>
-        </div>
-      </section>
+  <section className="cta-section">
 
-      {/* Call to Action */}
-      <section className="cta-section">
-
-        
-      </section>
+    
+  </section>
     </div>
   );
 };
