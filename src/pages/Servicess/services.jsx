@@ -11,7 +11,7 @@ import digitalFarm from '../../assets/digital-farm.jpg';
 import marketLinkage from '../../assets/market-linkage.jpg';
 import expertMentorship from '../../assets/expert-mentorship.jpg';
 import servicesBg from '../../assets/services_bg.png';
-import "./servicess.css";
+import "./services.css";
 
 const Servicess = () => {
   const scrollToSolutions = () => {
