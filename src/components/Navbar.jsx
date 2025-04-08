@@ -31,7 +31,7 @@ const Navbar = () => {
               </ul>
             )}
           </li>
-          <li><Link to='/resouces'>Resources</Link></li>
+          <li><Link to='/resources'>Resources</Link></li>
           <li><Link to='/newsroom'>Newsroom</Link></li>
           <li><Link to='/about'>About</Link></li>
           <li><Link to='/contact'>Contact</Link></li>
