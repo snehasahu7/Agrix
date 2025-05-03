@@ -10,6 +10,7 @@ import Footer from './components/Footer';
 import SocialSidebar from './components/SocialSidebar';
 import Newsroom from './pages/Newsroom/Newsroom.jsx';
 import Contact from './pages/Contact/Contact.jsx';
+import privacy from './pages/privacy/privacy.jsx';
 import './App.css';
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
          <Route path='/resources' element={<Resources/>} />
          <Route path='/newsroom' element={<Newsroom/>} />
          <Route path='/contact' element={<Contact/>} />
+         <Route path='/privacy' element={<privacy/>}/>
       </Routes>
       
     
