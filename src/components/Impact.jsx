@@ -1,43 +1,56 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import './Impact.css';
+import bg1 from "../assets/pexels-alejandro-barron-21404-96715.jpg"
+import bg2 from "../assets/pexels-rohan-dewangan-2844320-9268303.jpg"
+
+import bg5 from "../assets/pexels-binyaminmellish-169523.jpg"
+import bg3 from "../assets/pexels-ganta-srinivas-2966633-4579680.jpg"
+
+import bg4 from "../assets/pexels-thebioscopeguy-17504886.jpg"
+//import { BackgroundImage } from 'framer/render/types/BackgroundImage.js';
 
 const Impact = () => {
   const impacts = [
     {
-      title: "Direct Upliftment of Small and Marginal Farmers",
-      description: "Agrix empowers smallholder farmers by providing affordable access to mechanization, agri-inputs, and market linkages, thereby increasing farm income and reducing dependency on debt.",
+      title: "Direct Support to Small Farmers",
+      description: "Aims to boost farm income by offering affordable access to mechanisation and markets, while reducing debt dependency.",
       icon: "fas fa-hand-holding-heart",
+      bg: bg1,
       color: "#4CAF50"
     },
     {
-      title: "Improved Farm Productivity and Efficiency",
-      description: "Through cluster farming models and digitization of farm operations, Agrix has achieved 20-30% efficiency gains, enabling better yield, optimal resource use, and reduced operational costs for farmers.",
+      title: "Maximize Yields, Minimize Efforts",
+      description: "Farmers can increase productivity, optimize resource utilization, and save operating expenses by 20–30% with digital cluster farming.",
       icon: "fas fa-chart-line",
+      bg: bg2,
       color: "#2196F3"
     },
     {
-      title: "Higher Farmer Incomes through Increased Realization",
-      description: "Agrix's integrated services allow farmers to cultivate an additional crop season, leading to up to 40% higher realization and improved economic stability.",
+      title: "Empowering Farmers through better earnings",
+      description: " Realization rises by 40% with increased crop season cultivation.",
       icon: "fas fa-money-bill-wave",
+      bg: bg3,
       color: "#FF9800"
     },
     {
-      title: "Solving Structural Issues in Indian Agriculture",
-      description: "Agrix addresses critical problems like fragmented landholdings, poor mechanization (<2%), and low farm efficiency, creating a scalable solution that directly impacts the bottom of the pyramid farmers.",
+      title: "Solving India's Agriculture Challenges",
+      description: "Establishes a scalable solution by tackling the problems of fragmented landholdings and insufficient mechanization.",
       icon: "fas fa-tools",
+      bg: bg4,
       color: "#8BC34A"
     },
-    {
+    /*{
       title: "Large-Scale Reach and Growing Ecosystem",
       description: "With over 15,000 acres serviced and 12,000+ farmers engaged, Agrix has built a sustainable, scalable, and profitable model, with plans to reach 500,000 farmers across 6 states.",
       icon: "fas fa-globe-asia",
       color: "#9C27B0"
-    },
+    },*/
     {
-      title: "Building a Tech-Driven Future for Farming",
-      description: "By leveraging real-time data, farm mapping, and digital platforms, Agrix is modernizing Indian agriculture, making it data-driven, efficient, and farmer-centric—paving the way for Agriculture 4.0.",
+      title: "Tech-Driven Farming Solution",
+      description: "Pioneering India’s path to agri 4.0 through Data-driven and farmer centric agricultural solutions.",
       icon: "fas fa-microchip",
+      bg: bg5,
       color: "#3F51B5"
     }
   ];
@@ -76,7 +89,7 @@ const Impact = () => {
           transition={{ duration: 0.5 }}
         >
           <h2>Transforming Indian Agriculture</h2>
-          <p>We empower farmers with end to end farming solutions that solve core challenges, improve efficiency, and enhace livelihood at scale.</p>
+          <p>Helping farmers grow more, earn more, & live better.</p>
         </motion.div>
 
         <motion.div 
@@ -93,11 +106,14 @@ const Impact = () => {
               <motion.div 
                 key={index}
                 className="impact-card"
+                style={{ BackgroundImage: impact.bg , backgroundSize:'cover'}}
                 variants={itemVariants}
                 whileHover={{ 
                   scale: 1.05,
-                  transition: { duration: 0.3 }
+                  transition: { duration: 0.3 },
+                  
                 }}
+                
               >
                 <div className="impact-icon" style={{ backgroundColor: impact.color }}>
                   <i className={impact.icon}></i>

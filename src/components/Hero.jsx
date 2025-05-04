@@ -9,8 +9,8 @@ const Hero = () => {
       <SocialSidebar />
       <div className="container">
         <div className="hero-content1">
-          <h1>Revolutionizing Agriculture Through Technology</h1>
-          <p>Empowering farmers with cutting-edge solutions for sustainable and efficient farming</p>
+          <h1>360° Farming as a Service</h1>
+          <p>Empowering Small & Marginal Farmers</p>
           <Link to='/contact' className="cta-button">Get Started</Link>
         </div>
       </div>
