@@ -8,9 +8,9 @@ const Footer = () => {
       <ul className="footer-links">
           <li>Privacy Policy</li>
           <li>Cookies Policy</li>
-        <p> All rights reserved.&copy; Agrix agro</p>
           <li>Disclaimer</li>
           <li>Terms of Use</li>
+          <p> All rights reserved.&copy; Agrix Agro</p>
         </ul>
       </div>
     </footer>
