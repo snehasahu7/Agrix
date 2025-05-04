@@ -1,16 +1,16 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { FaSeedling, FaCloudSun, FaBug, FaFlask, FaChartLine, FaWater, FaTractor, FaMobileAlt, FaHandshake, FaMoneyBillWave, FaTools, FaWarehouse, FaCloudRain, FaGraduationCap, FaBalanceScale, FaDatabase, FaUsers, FaGlobeAmericas, FaMapMarkerAlt, FaLeaf } from 'react-icons/fa';
+import { FaSeedling, FaCloudSun, FaBug, FaChartLine, FaWater, FaTractor, FaHandshake, FaTools,   FaGraduationCap, FaBalanceScale } from 'react-icons/fa';
 import { GiWheat } from 'react-icons/gi';
-import agrixService from '../../assets/agrix-service.png';
-import agrixOffering from '../../assets/agrix-offering.png';
-import probsolAgri from '../../assets/probsol-agri.png';
 import machineryRental from '../../assets/machinery-rental.jpg';
 import agrixinputs from '../../assets/agrix-inputs.jpg';
 import digitalFarm from '../../assets/digital-farm.jpg';
 import marketLinkage from '../../assets/market-linkage.jpg';
 import expertMentorship from '../../assets/expert-mentorship.jpg';
 import servicesBg from '../../assets/services_bg.png';
+import Farmerinteraction from '../../assets/Farmer-interaction.jpg';
+import skillgrowth from '../../assets/skill-growth.jpeg';
+import modernmachinery from '../../assets/modernmachinery.jpg';
 import "./services.css";
 
 const Servicess = () => {
@@ -75,7 +75,7 @@ const Servicess = () => {
               >
                 <div className="cycle-item top">
                   <FaTractor />
-                  <span>LAND PREPERATION</span>
+                  <span>LAND PREPARATION</span>
                 </div>
                 <div className="cycle-item right">
                   <FaSeedling />
@@ -99,9 +99,9 @@ const Servicess = () => {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.5 }}
           >
-            <h2>Agrix Farming Circle</h2>
-            <p>Agrix engages directly with farmers in India, providing a 360-degree service from land preparation to market linkage. This includes inputs, machinery, and digitizing processes to optimize operations and data collection.
-            Agrix creates farming clusters to ensure bankable farm mechanization, quality agri-inputs, digital plot mapping and efficient market linkage to small and marginal farmers at affordable pricing.It focuses on small farmers and uses cluster modeling to consolidate fragmented lands. This improves efficiency and bargaining power while providing tailored support to farmers from inputs to outputs.</p>
+            <h2>AGRIX Farming Circle</h2>
+            <p>AgriX empowers small and marginal farmers in India through a 360-degree service model, providing end-to-end support from land preparation to market linkage. By creating farming clusters, AgriX delivers bankable farm mechanization, quality agri-inputs, and digital plot mapping at affordable prices, enhancing efficiency, productivity, and market access for farmers. Through cluster modeling, we consolidate fragmented lands, enhancing efficiency and bargaining power while delivering tailored support to farmers from inputs to outputs.
+            </p>
           </motion.div>
         </div>
 
@@ -113,7 +113,8 @@ const Servicess = () => {
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
           >
-            Farmers need more than hope — they need smart, sustainable support.
+            Turning uncertainty into opportunity for small farmers with smart and sustainable support.
+
           </motion.h2>
           <div className="challenges-visual">
             <div className="challenges-cycle">
@@ -195,7 +196,7 @@ const Servicess = () => {
             transition={{ duration: 0.6, delay: 0.2 }}
             viewport={{ once: true }}
           >
-            Agrix empowers farmers not just to survive, but to thrive — with knowledge, tools, markets, and support at their fingertips.
+            AgriX empowers farmers not just to survive, but to thrive — with knowledge, tools, markets, and support at their fingertips.
           </motion.p>
 
           <div className="tech-items">
@@ -287,7 +288,7 @@ const Servicess = () => {
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
           >
-            Where Our Solutions Meet Their Success
+            Where AgriX Solutions Harvest Real Farmer Success 
           </motion.h2>
 
           <div className="solutions-grid">
@@ -299,24 +300,11 @@ const Servicess = () => {
               viewport={{ once: true }}
             >
               <div className="solution-icon">
-                <img src="https://img.icons8.com/color/96/000000/farmer-male--v1.png" alt="Farmer Management" />
+                <img src={Farmerinteraction} alt="Community Support" />
               </div>
               <h3>Community Support & Confidence</h3>
-              <p>Agrix connects farmers with local networks, expert advisors, and peer groups, creating a support system that boosts morale and trust.</p>
-            </motion.div>
-
-            <motion.div 
-              className="solution-card"
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.2 }}
-              viewport={{ once: true }}
-            >
-              <div className="solution-icon">
-                <img src="https://img.icons8.com/color/96/000000/tractor.png" alt="Resource Tracking" />
-              </div>
-              <h3>Access to Modern  Machinery</h3>
-              <p>Farmers can easily access a wide range of modern machinery, from tractors to harvesters, tailored to their seasonal and crop-specific needs.</p>
+              <p>At AgriX, we empower farmers with a year-round support system, through trusted local networks, expert advice, and strong peer connections.
+              </p>
             </motion.div>
 
             <motion.div 
@@ -327,25 +315,30 @@ const Servicess = () => {
               viewport={{ once: true }}
             >
               <div className="solution-icon">
-                <img src="https://img.icons8.com/color/96/000000/statistics.png" alt="Data Analytics" />
+                <img src={skillgrowth} alt="Skill Growth" />
               </div>
               <h3>Knowledge & Skill Growth</h3>
-              <p>Continuous updates, training modules, and expert support help farmers adopt modern methods and sustainable practices confidently.</p>
+              <p>AgriX offers expert support for machinery management while empowering local youth through training that drives employment, skills, and regional agricultural growth</p>
             </motion.div>
 
             <motion.div 
               className="solution-card"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.4 }}
+              transition={{ duration: 0.6, delay: 0.2 }}
               viewport={{ once: true }}
             >
               <div className="solution-icon">
-                <img src="https://img.icons8.com/color/96/000000/natural-food.png" alt="Sustainable Practices" />
+                <img src={modernmachinery} alt="Resource Tracking" />
               </div>
-              <h3>Access to High-Quality Agri Inputs</h3>
-              <p>Certified seeds, fertilizers, and pesticides are available through the platform.Ensures better crop performance, reduced risks, and trust in input quality.</p>
+              <h3>Access to Modern  Machinery</h3>
+              <p>Offering a range of advanced machinery like laser levellers, drones, reapers, and more which are suitable for seasonal and crop-specific needs. 
+              </p>
             </motion.div>
+
+            
+
+            
           </div>
         </section>
       </div>
