@@ -543,28 +543,10 @@ const Technology = () => {
     </div>
   </section>
 
-  <section className="impact-section">
-    <h2>Our Impact</h2>
-    <div className="impact-stats">
-      <div className="stat-card">
-      <h3>40%</h3>
-      <p>Efficiency Gains</p>
-      </div>
-      <div className="stat-card">
-      <h3>12,000+</h3>
-      <p>Farmers Empowered</p>
-      </div>
-      <div className="stat-card">
-        <h3>10+</h3>
-        <p>Cluster Networks</p>
-      </div>
-    </div>
-  </section>
-
-  <section className="cta-section">
+ 
 
     
-  </section>
+  
     </div>
   );
 };
