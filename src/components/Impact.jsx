@@ -106,7 +106,7 @@ const Impact = () => {
               <motion.div 
                 key={index}
                 className="impact-card"
-                style={{ BackgroundImage: impact.bg , backgroundSize:'cover'}}
+                style={{ image: impact.bg , backgroundSize:'cover'}}
                 variants={itemVariants}
                 whileHover={{ 
                   scale: 1.05,
