@@ -3,7 +3,9 @@ import Hero from "../../components/Hero.jsx"
 import Philosophy from "../../components/Philosophy.jsx"
 import Services from "../../components/Services.jsx"
 import Impact from "../../components/Impact.jsx";
-import AgriValueChain from "../../components/AgriValueChain.jsx";
+
+import Presence from "../../components/Presence.jsx";
+
 
 const Home=()=>{
     return(
@@ -13,7 +15,7 @@ const Home=()=>{
             <Philosophy/>
             <Services/>
             <Impact/>
-            <AgriValueChain/>
+            <Presence/>
         
         </div>
     )

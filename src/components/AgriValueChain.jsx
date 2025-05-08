@@ -1,7 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import './AgriValueChain.css';
-import agriGrowth from '../assets/agri-growth.png';
+
 
 const AgriValueChain = () => {
   return (
@@ -14,8 +13,8 @@ const AgriValueChain = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
         >
-          <h2>Agrix Smart Growth Roadmap</h2>
-          <p>From the roots of tradition to the future of smart farming—leveraging technology, data, and innovation to transform agriculture into a more efficient, sustainable, and profitable industry.</p>
+          <h2>Our Presence</h2>
+          <p>Making the change, One farm at a time.</p>
         </motion.div>
 
         <motion.div 
@@ -25,11 +24,20 @@ const AgriValueChain = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
         >
-          <img 
-            src={agriGrowth} 
-            alt="Agri Value Chain" 
-            className="value-chain-image"
-          />
+           <div className="impact-stats">
+                <div className="stat-card">
+                    <h3>40%</h3>
+                    <p>Efficiency Gains</p>
+                </div>
+                <div className="stat-card">
+                    <h3>12,000+</h3>
+                    <p>Farmers Empowered</p>
+                </div>
+                <div className="stat-card">
+                    <h3>10+</h3>
+                    <p>Cluster Networks</p>
+                </div>
+            </div>
         </motion.div>
       </div>
     </section>
