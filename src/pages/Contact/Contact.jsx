@@ -1,7 +1,8 @@
 import React from 'react';
 import './Contact.css';
 import { motion } from 'framer-motion';
-import { FaMapMarkerAlt, FaPhone, FaEnvelope, FaFacebookF, FaTwitter, FaInstagram, FaYoutube, FaLinkedinIn, FaPinterest } from 'react-icons/fa';
+import { FaMapMarkerAlt, FaPhone, FaEnvelope, FaFacebookF,  FaInstagram, FaYoutube, FaLinkedinIn, FaPinterest } from 'react-icons/fa';
+import { FaXTwitter } from "react-icons/fa6";
 import delhiMap from '../../assets/delhi-map.png';
 import patnaMap from '../../assets/patna-map.png';
 
@@ -146,7 +147,7 @@ const Contact = () => {
                 variants={itemVariants}
               >
                 <motion.a 
-                  href="https://facebook.com" 
+                  href="https://www.facebook.com/AgrixIndia/" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   whileHover={{ scale: 1.1 }}
@@ -161,12 +162,12 @@ const Contact = () => {
                 variants={itemVariants}
               >
                 <motion.a 
-                  href="https://twitter.com" 
+                  href="https://x.com/AgrixIndia/with_replies" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   whileHover={{ scale: 1.1 }}
                 >
-                  <FaTwitter />
+                  <FaXTwitter  />
                   <span>Twitter</span>
                 </motion.a>
               </motion.div>
@@ -176,7 +177,7 @@ const Contact = () => {
                 variants={itemVariants}
               >
                 <motion.a 
-                  href="https://instagram.com" 
+                  href="https://www.instagram.com/agrixindia/" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   whileHover={{ scale: 1.1 }}
@@ -191,7 +192,7 @@ const Contact = () => {
                 variants={itemVariants}
               >
                 <motion.a 
-                  href="https://youtube.com" 
+                  href="https://www.youtube.com/@agrixindia" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   whileHover={{ scale: 1.1 }}
@@ -206,7 +207,7 @@ const Contact = () => {
                 variants={itemVariants}
               >
                 <motion.a 
-                  href="https://linkedin.com" 
+                  href="http://in.linkedin.com/company/agrixagrotech" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   whileHover={{ scale: 1.1 }}
@@ -221,7 +222,7 @@ const Contact = () => {
                 variants={itemVariants}
               >
                 <motion.a 
-                  href="https://pinterest.com" 
+                  href="https://in.pinterest.com/agrixagro/" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   whileHover={{ scale: 1.1 }}
