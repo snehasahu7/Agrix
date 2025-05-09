@@ -32,7 +32,11 @@ const Impact = () => {
       icon: "fas fa-money-bill-wave",
       bg: bg3,
       color: "#FF9800"
-    },
+    }
+   
+  ];
+
+  const impact2 = [
     {
       title: "Solving India's Agriculture Challenges",
       description: "Establishes a scalable solution by tackling the problems of fragmented landholdings and insufficient mechanization.",
@@ -124,7 +128,33 @@ const Impact = () => {
                 </div>
               </motion.div>
             ))}
+            
+            
           </motion.div>
+          <motion.div className="impact-grid2">
+              {impact2.map((impact,index)=>(
+              <motion.div 
+              key={index}
+              className="impact-card"
+              style={{ image: impact.bg , backgroundSize:'cover'}}
+              variants={itemVariants}
+              whileHover={{ 
+                scale: 1.05,
+                transition: { duration: 0.3 },
+                
+              }}
+              
+            >
+              <div className="impact-icon" style={{ backgroundColor: impact.color }}>
+                <i className={impact.icon}></i>
+              </div>
+              <div className="impact-content">
+                <h3>{impact.title}</h3>
+                <p>{impact.description}</p>
+              </div>
+            </motion.div>
+            ))}
+            </motion.div>
         </motion.div>
       </div>
     </section>

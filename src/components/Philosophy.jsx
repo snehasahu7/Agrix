@@ -6,19 +6,19 @@ const Philosophy = () => {
   const philosophies = [
     {
       title: 'Mission',
-      description: 'To revolutionize agriculture through sustainable practices and innovative technology, ensuring food security for future generations.',
+      description: 'Our mission is to transform agriculture by creating farming clusters, providing quality inputs, and ensuring efficient market linkages for small and marginal farmers.',
       icon: 'fas fa-bullseye',
       color: '#4CAF50'
     },
     {
       title: 'Vision',
-      description: 'To be the global leader in sustainable agriculture, setting new standards for environmental stewardship and agricultural innovation.',
+      description:  'To revolutionize agriculture through sustainable practices and innovative technology, ensuring food security for future generations.',
       icon: 'fas fa-eye',
       color: '#FFC107'
     },
     {
       title: 'Technology',
-      description: 'Leveraging cutting-edge solutions including AI, IoT, and precision farming to optimize agricultural operations and maximize yields.',
+      description: 'AgriX Data Pool identifies clusters, digitizes farming plots, and links services using digital profiles, AI, IoT, and ML to give farmers data-driven insights and precision agriculture.',
       icon: 'fas fa-microchip',
       color: '#2196F3'
     }
