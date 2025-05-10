@@ -1,27 +1,31 @@
 import React from 'react';
+import img1 from "../assets/pexels-tomfisk-28856788.jpg"
+import img2 from "../assets/pexels-cottonbro-5538169.jpg"
+import img3 from "../assets/Tracking (1).jpg"
+import img4 from "../assets/pexels-cytonn-955395.jpg"
 import './Services.css';
 
 const Services = () => {
   const services = [
     {
-      icon: 'fas fa-cogs',
+      icon: img1,
       title: 'Efficient Machinery Rental',
       description: 'Mechanization of fragmented farms through efficient clustering'
     },
     {
-      icon: 'fas fa-tractor',
+      icon: img2,
       title: 'Quality Agri inputs supply',
       description: 'Data led Agri-inputs supply and farm management for value added inputs'
     },
     {
-      icon: 'fas fa-digital-tachograph',
+      icon: img3,
       title: 'Digital Farm Management',
-      description: 'Management of farms and farmers\' data within a cluster for actionable insights'
+      description: 'Farm insights via digital mapping, crop advising, and crop passports enable cluster-based farming.'
     },
     {
-      icon: 'fas fa-handshake',
+      icon: img4,
       title: 'Strong Market Linkage',
-      description: 'Digital maps for real time yield predictions for better planning on offtakers side'
+      description: 'AgriX gives farmers digital insights and data for precise yield predictions, optimal market linkages, and data-driven planning.'
     }
   ];
 
@@ -33,7 +37,7 @@ const Services = () => {
         <div className="services-grid">
           {services.map((service, index) => (
             <div key={index} className="service-card">
-              <i className={service.icon}></i>
+              <img src={service.icon} alt=""/>
               <h3>{service.title}</h3>
               <p>{service.description}</p>
             </div>

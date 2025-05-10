@@ -21,7 +21,7 @@
 
 .services-description {
   text-align: center;
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   color: whitesmoke;
   max-width: 600px;
   margin: 0 auto 3rem;
@@ -53,6 +53,13 @@
   color: var(--primary-color);
   margin-bottom: 1.5rem;
 }
+.service-card img{
+  height: 100px;
+  width:100px;
+  margin-bottom: 1.5rem;
+  border-radius: 50%;
+  
+}
 
 .service-card h3 {
   font-size: 1.5rem;
@@ -63,6 +70,7 @@
 .service-card p {
   color: var(--text-color);
   line-height: 1.6;
+  font-size: 15px;
 }
 
 @media (max-width: 1200px) {
