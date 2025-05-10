@@ -37,14 +37,14 @@
 
 @media (max-width: 768px) {
   .social-sidebar {
-    position: fixed;
+    position: absolute;
     bottom: 0;
     left: 0;
     right: 0;
     top: auto;
     transform: none;
     flex-direction: row;
-    justify-content: center;
+    justify-content:right;
     padding: 1rem;
     gap: 3rem;
     background-color: transparent;
