@@ -1,17 +1,17 @@
-.privacy{
-    margin: 40px;
+.cookies{
+    margin: 80px;
 }
-.privacy-container{
-    padding: 30px;
+.cookies-container{
+    padding: 50px;
     display: flex;
     flex-direction: column;
 }
 
-.privacy-header{
+.cookies-header{
     font-size: 30px;
     font-weight: 600;
 }
 
-.privacy-content{
+.cookies-content{
  font-size: 20px;
 }

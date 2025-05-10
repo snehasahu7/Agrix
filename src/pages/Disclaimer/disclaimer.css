@@ -1,17 +1,17 @@
-.privacy{
-    margin: 40px;
+.disclaimer{
+    margin: 80px;
 }
-.privacy-container{
-    padding: 30px;
+.disclaimer-container{
+    padding:50px;
     display: flex;
     flex-direction: column;
 }
 
-.privacy-header{
+.disclaimer-header{
     font-size: 30px;
     font-weight: 600;
 }
 
-.privacy-content{
+.disclaimer-content{
  font-size: 20px;
 }
