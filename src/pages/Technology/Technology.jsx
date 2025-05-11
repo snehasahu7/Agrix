@@ -2,10 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import AgrixPlots from "../../assets/Agrix Plots (1).jpg";
 import tracking from "../../assets/Tracking-1.jpg"
-import sprayer from "../../assets/sprayer.png";
-import tractor from "../../assets/tractor.png";
-import cagewheel from "../../assets/cagewheel.png";
-import thresher from "../../assets/thresher.png";
+
 import app1 from "../../assets/App-1 (1).png";
 import app2 from "../../assets/App-2 (1).png";
 import app3 from "../../assets/App-3 (1).png";
@@ -13,6 +10,10 @@ import datapool from "../../assets/data-pool.png"
 import img1 from "../../assets/Running Summary (1).jpg"
 import img2 from "../../assets/Tracking (3).jpg"
 import img3 from "../../assets/data analytics.jpeg"
+import drone from "../../assets/drone.png"
+import strawreaper from "../../assets/straw reaper.png"
+import laserleveller from "../../assets/laser leveller.jpg"
+import harvester from "../../assets/Harvester_with logo_png.png"
 import "./Technology.css";
 
 const Technology = () => {
@@ -617,7 +618,7 @@ const Technology = () => {
       {/* Sprayer System */}
       <motion.div className="implement-card">
         <motion.div className="implement-image">
-          <img src={sprayer} alt="Advanced Sprayer System" />
+          <img src={harvester} alt="Advanced Sprayer System" />
         </motion.div>
         <div className="implement-content">
           <h3>Multi-Crop Harvester</h3>
@@ -633,7 +634,7 @@ const Technology = () => {
       {/* Tractor System */}
       <motion.div className="implement-card">
         <motion.div className="implement-image">
-          <img src={tractor} alt="Smart Tractor System" />
+          <img src={drone} alt="Smart Tractor System" />
         </motion.div>
         <div className="implement-content">
           <h3>Agricultural Drones</h3>
@@ -649,7 +650,7 @@ const Technology = () => {
       {/* Cage Wheel System */}
       <motion.div className="implement-card">
         <motion.div className="implement-image">
-          <img src={cagewheel} alt="Cage Wheel System" />
+          <img src={laserleveller} alt="Cage Wheel System" />
         </motion.div>
         <div className="implement-content">
           <h3>Laser Leveler</h3>
@@ -665,7 +666,7 @@ const Technology = () => {
       {/* Thresher System */}
       <motion.div className="implement-card">
         <motion.div className="implement-image">
-          <img src={thresher} alt="Advanced Thresher" />
+          <img src={strawreaper} alt="Advanced Thresher" />
         </motion.div>
         <div className="implement-content">
           <h3>Straw Reaper</h3>

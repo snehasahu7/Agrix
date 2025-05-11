@@ -211,7 +211,7 @@ const About = ()=>{
         whileInView={{ opacity: 1, x: 0 }}
         viewport={{ once: true }}
       >
-        <div className="date">Early life</div>
+        <div className="datee">Early life</div>
         <div className="content">
           <p>Nilay's story-Grew up in a small village in Bihar in a Teacher's family – spending most of his time roaming around the farms.</p>
         </div>
@@ -223,7 +223,7 @@ const About = ()=>{
         whileInView={{ opacity: 1, x: 0 }}
         viewport={{ once: true }}
       >
-        <div className="date">2002</div>
+        <div className="datee">2002</div>
         <div className="content">
           <p>Leaves his village as his parents move to a nearby town. Keeps visiting his village regularly on vacations.</p>
         </div>
@@ -235,7 +235,7 @@ const About = ()=>{
         whileInView={{ opacity: 1, x: 0 }}
         viewport={{ once: true }}
       >
-        <div className="date">2008-2012</div>
+        <div className="datee">2008-2012</div>
         <div className="content">
           <p>Leaves Bihar for higher studies.Graduates, joins Infosys for a brief time. Joins NIT Rourkela for an MTech in Signal & Image Processing. Works on image-based plant phenomics.</p>
         </div>
@@ -247,7 +247,7 @@ const About = ()=>{
         whileInView={{ opacity: 1, x: 0 }}
         viewport={{ once: true }}
       >
-        <div className="date">2014-2015</div>
+        <div className="datee">2014-2015</div>
         <div className="content">
           <p>Completes his MTech, starts working as a senior research fellow.Joins IIT Delhi to pursue his Ph.D</p>
         </div>
@@ -259,7 +259,7 @@ const About = ()=>{
         whileInView={{ opacity: 1, x: 0 }}
         viewport={{ once: true }}
       >
-        <div className="date">2016-2017</div>
+        <div className="datee">2016-2017</div>
         <div className="content">
           <p>Revisited his village after 8 years. He found his village deserted as farming lost its appeal. This inspired him to explore tech-driven solutions and idea to employ tech in farming.</p>
         </div>
@@ -271,7 +271,7 @@ const About = ()=>{
         whileInView={{ opacity: 1, x: 0 }}
         viewport={{ once: true }}
       >
-        <div className="date">2019</div>
+        <div className="datee">2019</div>
         <div className="content">
           <p>Met Saurav and Vivek at IIT DElhi, bonding over shared farming challenges. Launched a 1-acre pilot project, facing delays in hiring a tractor and seed procurement.</p>
         </div>
@@ -283,7 +283,7 @@ const About = ()=>{
         whileInView={{ opacity: 1, x: 0 }}
         viewport={{ once: true }}
       >
-        <div className="date">2020</div>
+        <div className="datee">2020</div>
         <div className="content">
           <p>Agrix is registered, with first operational cluster in Nawada, Bihar.</p>
         </div>
