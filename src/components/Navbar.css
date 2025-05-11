@@ -99,7 +99,7 @@ nav {
   border-radius: 8px;
   box-shadow: 0 4px 12px #0000001a;
   opacity: 0;
-  visibility: hidden;
+  visibility:visible;
 }
 
 .solutions-dropdown:hover .dropdown-menu,

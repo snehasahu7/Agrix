@@ -10,7 +10,9 @@ import Footer from './components/Footer';
 import SocialSidebar from './components/SocialSidebar';
 import Newsroom from './pages/Newsroom/Newsroom.jsx';
 import Contact from './pages/Contact/Contact.jsx';
-import privacy from './pages/privacy/privacy.jsx';
+import Privacy from './pages/Privacy/privacy.jsx';
+import Cookies from './pages/Cookies/cookies.jsx';
+import Disclaimer from './pages/Disclaimer/disclaimer.jsx';
 import './App.css';
 
 function App() {
@@ -26,7 +28,10 @@ function App() {
          <Route path='/resources' element={<Resources/>} />
          <Route path='/newsroom' element={<Newsroom/>} />
          <Route path='/contact' element={<Contact/>} />
-         <Route path='/privacy' element={<privacy/>}/>
+         <Route path='/privacy' element={<Privacy/>}/>
+         <Route path='/cookies' element={<Cookies/>}/>
+          <Route path='/disclaimer' element={<Disclaimer/>}/>
+
       </Routes>
       
     
