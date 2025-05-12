@@ -37,3 +37,29 @@ footer {
   font-weight: 600; 
   margin: 0;
 }
+@media (max-width: 576px) {
+  .footer-bottom {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+    gap: 1rem; /* Adds space between p and links */
+  }
+
+  .footer-links {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .footer-links li {
+    font-size: 1rem;
+    font-weight: 500;
+  }
+
+  .footer-bottom p {
+    font-size: 1rem;
+    font-weight: 500;
+    margin: 0;
+  }
+}
