@@ -5,9 +5,15 @@ import './Navbar.css';
 
 const Navbar = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   
   const handleOptionClick = () => {
     setIsDropdownOpen(false);
+    setIsMobileMenuOpen(false);
+  };
+
+  const toggleMobileMenu = () => {
+    setIsMobileMenuOpen(!isMobileMenuOpen);
   };
 
   return (
@@ -16,9 +22,13 @@ const Navbar = () => {
         <div className="logo">
           <Link to='/'><img src={logo} alt="Agrix" className='logo-img'/></Link> 
         </div>
-        <ul className="nav-links">
-          <li><Link to='/'>Home</Link> </li>
-        
+        <div className="hamburger" onClick={toggleMobileMenu}>
+          <div className={`bar ${isMobileMenuOpen ? 'active' : ''}`}></div>
+          <div className={`bar ${isMobileMenuOpen ? 'active' : ''}`}></div>
+          <div className={`bar ${isMobileMenuOpen ? 'active' : ''}`}></div>
+        </div>
+        <ul className={`nav-links ${isMobileMenuOpen ? 'active' : ''}`}>
+          <li><Link to='/' onClick={handleOptionClick}>Home</Link> </li>
           <li className="solutions-dropdown">
             <a href="#solutions" onClick={(e) => {
               e.preventDefault();
@@ -31,10 +41,10 @@ const Navbar = () => {
               </ul>
             )}
           </li>
-          <li><Link to='/resources'>Resources</Link></li>
-          <li><Link to='/newsroom'>Newsroom</Link></li>
-          <li><Link to='/about'>About</Link></li>
-          <li><Link to='/contact'>Contact</Link></li>
+          <li><Link to='/resources' onClick={handleOptionClick}>Resources</Link></li>
+          <li><Link to='/newsroom' onClick={handleOptionClick}>Newsroom</Link></li>
+          <li><Link to='/about' onClick={handleOptionClick}>About</Link></li>
+          <li><Link to='/contact' onClick={handleOptionClick}>Contact</Link></li>
         </ul>
       </nav>
     </header>
