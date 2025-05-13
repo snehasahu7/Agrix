@@ -37,7 +37,12 @@ const Technology = () => {
        }
      }
    }, [location]);
-
+   const scrollToSolution = () => {
+    const solutionsSection = document.querySelector('.data-pool');
+    if (solutionsSection) {
+      solutionsSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
 
 
   return (
@@ -51,10 +56,10 @@ const Technology = () => {
             transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}>Empowering farmers with digital solutions for sustainable farming</motion.h1>
             
           </div>
-          <div className="hero-buttons">
-            <Link to="/tech#learnmore" className="primary-btn">Learn More</Link>
+          {/*<div className="hero-buttons">
+             <button className="bttn" onClick={scrollToSolution}>Learn more</button>
             
-          </div>
+          </div>*/}
         </div>
       </section>
 <section className="mobile-apps-section">
