@@ -210,9 +210,9 @@ height: 85vh;
 
 .farm-content {
    margin-top: 4rem;
-  
-  border-radius: 40px;
-  padding-top:40px ;
+   background: transparent;
+   border-radius: 40px;
+   padding-top: 40px;
  
 }
 .feature-wrap{
@@ -269,6 +269,155 @@ height: 85vh;
   font-size: 1.2rem;
   color: #666;
   margin-top: 1rem;
+}
+
+
+/* Add only media queries for responsiveness */
+@media screen and (max-width: 1200px) {
+  .feature-item-img {
+    gap: 80px;
+    padding-left: 40px;
+    padding-right: 30px;
+  }
+
+  .feature-item-img img {
+    width: 240px;
+    height: 220px;
+  }
+
+  .feature-item {
+    margin-left: 60px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .feature-item-img {
+    gap: 40px;
+    padding-left: 30px;
+    padding-right: 20px;
+  }
+
+  .feature-item-img img {
+    width: 220px;
+    height: 200px;
+  }
+
+  .feature-item {
+    margin-left: 40px;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .features-section {
+    padding: 3rem 1rem;
+  }
+
+  .headerss p {
+    font-size: 2rem;
+  }
+
+  .feature-item-img {
+    flex-direction: row;
+    gap: 20px;
+    padding: 20px;
+    margin: 0 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .feature-item-img img {
+    width: 200px;
+    height: 180px;
+    object-fit: cover;
+  }
+
+  .features-grid {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    padding: 0 20px;
+  }
+
+  .feature-item {
+    margin: 0;
+    padding: 20px;
+    border-radius: 40px;
+  }
+
+  .feature-item h4 {
+    font-size: 1.5rem;
+  }
+
+  .feature-item p {
+    font-size: 1.3rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .features-section {
+    padding: 2rem 0.5rem;
+  }
+
+  .headerss p {
+    font-size: 1.8rem;
+  }
+
+  .feature-item-img {
+    gap: 15px;
+    padding: 15px;
+    margin: 0 10px;
+  }
+
+  .feature-item-img img {
+    width: 150px;
+    height: 140px;
+  }
+
+  .features-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    padding: 0 10px;
+  }
+
+  .feature-item {
+    padding: 15px;
+    border-radius: 30px;
+  }
+
+  .feature-item h4 {
+    font-size: 1.4rem;
+  }
+
+  .feature-item p {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .features-grid {
+    display: flex !important;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .features-grid .feature-item {
+    width: 48%;
+    min-width: 220px;
+    margin: 8px 1%;
+  }
+  .features-grid .feature-item:nth-child(3) {
+    width: 60%;
+    min-width: 220px;
+    margin-left: 20%;
+    margin-right: 20%;
+    /* Or use margin: 0 auto; if you want it always centered */
+    display: block;
+  }
 }
 
 /* Smart Technologies Section */
@@ -639,6 +788,12 @@ height: 85vh;
   }
 }
 
+@media (max-width: 992px){
+  .img-pool img{
+    width:800px;
+ 
+ }
+} 
 @media (max-width: 768px) {
   .mobile-apps-section {
     padding: 60px 20px;
@@ -675,6 +830,11 @@ height: 85vh;
   }
 }
 
+@media (max-width: 600px) {
+  .img-pool img {
+    width: 500px;
+  }
+}
 @media (max-width: 480px) {
   .mobile-apps-section {
     padding: 40px 15px;
@@ -1191,9 +1351,9 @@ height: 85vh;
   
   .farm-content {
      margin-top: 3rem;
-    
-    border-radius: 20px;
-    padding-top:15px ;
+     background: transparent;
+     border-radius: 40px;
+     padding-top: 40px;
    
   }
   .feature-wrap{
@@ -1229,8 +1389,8 @@ height: 85vh;
   }
   .feature-item-img img{
     border-radius: 20px;
-    width: 100px;
-    height:100px;
+    width: 80px;
+    height:80px;
     border: 1px solid #004d40;
     box-shadow: #a8a8a8;
   }
@@ -1675,6 +1835,25 @@ height: 85vh;
   .satellite-images-column .image-container {
     width: 100%;
     max-width: 340px;
+  }
+}
+@media (max-width: 700px) {
+  .satellite-images-row {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 2rem !important;
+    width: 100%;
+  }
+  .satellite-images-row .image-container {
+    margin-left: auto !important;
+    margin-right: auto !important;
+    width: 100% !important;
+    max-width: 340px !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
 @media (max-width: 700px) {

@@ -1,10 +1,13 @@
-import React from 'react';
+import { React, useEffect }from 'react';
 import './Contact.css';
 import { motion } from 'framer-motion';
 import { FaMapMarkerAlt, FaPhone, FaEnvelope, FaFacebookF,  FaInstagram, FaYoutube, FaLinkedinIn, FaPinterest } from 'react-icons/fa';
 import { FaXTwitter } from "react-icons/fa6";
 import delhiMap from '../../assets/delhi-map.png';
 import patnaMap from '../../assets/patna-map.png';
+import { useLocation } from "react-router-dom";
+
+
 
 const Contact = () => {
   const containerVariants = {
@@ -41,6 +44,15 @@ const Contact = () => {
       }
     }
   };
+const location = useLocation();
+useEffect(() => {
+  if (location.hash === "#dropamessage") {
+    const el = document.getElementById("dropamessage");
+    if (el) {
+      el.scrollIntoView({ behavior: "smooth" });
+    }
+  }
+}, [location]);
 
   return (
     <motion.section 
@@ -239,6 +251,7 @@ const Contact = () => {
         <motion.div 
           className="message-section"
           variants={containerVariants}
+          id="dropamessage"
         >
           <motion.h3 variants={itemVariants}>LEAVE US A MESSAGE</motion.h3>
           <motion.p 

@@ -29,13 +29,25 @@ footer {
 }
 
 .footer-links li:hover {
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 .footer-bottom p {
   font-size: 1.5rem; 
   font-weight: 600; 
   margin: 0;
+}
+
+.footer-links a {
+  text-decoration: none !important;
+  color: var(--white) !important;
+}
+
+.footer-links a:hover,
+.footer-links a:active,
+.footer-links a:focus {
+  text-decoration: none !important;
+  color: var(--white) !important;
 }
 @media (max-width: 576px) {
   .footer-bottom {

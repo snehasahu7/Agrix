@@ -50,7 +50,7 @@
 .cta p{
     font-size: 25px;
 }
-button:hover{
+.btn:hover{
     transition: 0.3s ease-in;
     scale: 1.05;
 }
@@ -58,3 +58,13 @@ button:hover{
     font-size: 2.5rem;
     color: #2c3e50;
   }
+
+.cta Link{
+    text-decoration: none;
+    
+}
+.btn{
+    align-items: center;
+    text-decoration: none;
+    padding-top: 10px;
+}

@@ -1,5 +1,6 @@
 import React from "react";
 import { useState, useEffect} from "react";
+import { Link, useNavigate } from 'react-router-dom';
 import './Presence.css'
 
 const Presence=()=>{
@@ -60,7 +61,7 @@ const Presence=()=>{
         </div>
         <div className="cta">
             <p>____To be a member of an innovative farming community</p>
-            <button className="btn">DROP US A LINE</button>
+            <Link to="/contact#dropamessage" className="btn">DROP US A LINE</Link>
         </div>
         
       </section>

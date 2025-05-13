@@ -1,8 +1,8 @@
-import React from "react";
+import {React, useEffect} from "react";
 import { motion } from "framer-motion";
 import AgrixPlots from "../../assets/Agrix Plots (1).jpg";
 import tracking from "../../assets/Tracking-1.jpg"
-
+import { useLocation, Link} from "react-router-dom";
 import app1 from "../../assets/App-1 (1).png";
 import app2 from "../../assets/App-2 (1).png";
 import app3 from "../../assets/App-3 (1).png";
@@ -28,6 +28,17 @@ const Technology = () => {
       img: img3
     }
    ]
+   const location = useLocation();
+   useEffect(() => {
+     if (location.hash === "#learnmore") {
+       const el = document.getElementById("learnmore");
+       if (el) {
+         el.scrollIntoView({ behavior: "smooth" });
+       }
+     }
+   }, [location]);
+
+
 
   return (
     <div className="technology-container">
@@ -41,7 +52,7 @@ const Technology = () => {
             
           </div>
           <div className="hero-buttons">
-            <button className="primary-btn">Learn More</button>
+            <Link to="/tech#learnmore" className="primary-btn">Learn More</Link>
             
           </div>
         </div>
@@ -290,7 +301,7 @@ const Technology = () => {
     </div>
   </section>
 
-  <section className="data-pool">
+  <section className="data-pool" id="learnmore">
   <motion.div
       className="section-header"
       initial={{ opacity: 0, y: 20 }}
@@ -304,6 +315,7 @@ const Technology = () => {
         whileInView={{ opacity: 1 }}
         viewport={{ once: true }}
         transition={{ duration: 0.5, delay: 0.2 }}
+        
       >
         AgriX Data Pool
       </motion.h2>
