@@ -10,7 +10,7 @@ import Footer from './components/Footer';
 import SocialSidebar from './components/SocialSidebar';
 import Newsroom from './pages/Newsroom/Newsroom.jsx';
 import Contact from './pages/Contact/Contact.jsx';
-import Privacy from './pages/privacy/privacy.jsx';
+import Privacy from './pages/Privacy/privacy.jsx';
 import Cookies from './pages/Cookies/cookies.jsx';
 import Disclaimer from './pages/Disclaimer/disclaimer.jsx';
 import './App.css';
