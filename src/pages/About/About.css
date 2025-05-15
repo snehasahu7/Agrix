@@ -363,6 +363,7 @@ color: #00b899;
 
     .founderss {
         flex-wrap: wrap;
+        
         justify-content: center;
         gap: 20px;
     }
@@ -448,6 +449,8 @@ color: #00b899;
     .partners {
         margin: 0 10px;
         padding: 10px;
+        align-items: center;
+        justify-content: center;
     }
 
     .invpic {
