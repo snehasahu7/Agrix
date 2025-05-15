@@ -60,7 +60,7 @@ const Presence=()=>{
           </div>
         </div>
         <div className="cta">
-            <p>____To be a member of an innovative farming community</p>
+            <p>To be a member of an innovative farming community</p>
             <Link to="/contact#dropamessage" className="btn">DROP US A LINE</Link>
         </div>
         

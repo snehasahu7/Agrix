@@ -1,5 +1,5 @@
 import React from 'react';
-import img1 from "../assets/pexels-tomfisk-28856788.jpg"
+import img1 from "../assets/Harvester in field.jpg"
 import img2 from "../assets/pexels-cottonbro-5538169.jpg"
 import img3 from "../assets/Tracking (1).jpg"
 import img4 from "../assets/pexels-cytonn-955395.jpg"
@@ -13,7 +13,7 @@ const Services = () => {
       description: 'Mechanization of fragmented farms through efficient clustering'
     },
     {
-      icon: img2,
+      icon: img4,
       title: 'Quality Agri inputs supply',
       description: 'Data led Agri-inputs supply and farm management for value added inputs'
     },
@@ -23,7 +23,7 @@ const Services = () => {
       description: 'Farm insights via digital mapping, crop advising, and crop passports enable cluster-based farming.'
     },
     {
-      icon: img4,
+      icon: img2,
       title: 'Strong Market Linkage',
       description: 'AgriX gives farmers digital insights and data for precise yield predictions, optimal market linkages, and data-driven planning.'
     }
