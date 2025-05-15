@@ -17,27 +17,25 @@ import './App.css';
 
 function App() {
   return (
-    <div className="App">
+    <div className="app-container">
       <Router>
         <Navbar />
-      <Routes>
-         <Route path='/' element={<Home/>} />
-         <Route path='/about' element={<About/>} />
-         <Route path='/servicess' element={<Servicess />}/>
-         <Route path='/tech' element={<Technology/>} />
-         <Route path='/resources' element={<Resources/>} />
-         <Route path='/newsroom' element={<Newsroom/>} />
-         <Route path='/contact' element={<Contact/>} />
-         <Route path='/privacy' element={<Privacy/>}/>
-         <Route path='/cookies' element={<Cookies/>}/>
-          <Route path='/disclaimer' element={<Disclaimer/>}/>
-
-      </Routes>
-      
-    
-      <Footer />
+        <div className="content-wrap">
+          <Routes>
+            <Route path='/' element={<Home />} />
+            <Route path='/about' element={<About />} />
+            <Route path='/servicess' element={<Servicess />} />
+            <Route path='/tech' element={<Technology />} />
+            <Route path='/resources' element={<Resources />} />
+            <Route path='/newsroom' element={<Newsroom />} />
+            <Route path='/contact' element={<Contact />} />
+            <Route path='/privacy' element={<Privacy />} />
+            <Route path='/cookies' element={<Cookies />} />
+            <Route path='/disclaimer' element={<Disclaimer />} />
+          </Routes>
+        </div>
+        <Footer />
       </Router>
-      
     </div>
   );
 }
