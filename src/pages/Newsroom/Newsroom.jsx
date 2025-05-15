@@ -150,11 +150,11 @@ const NewsRoom = () => {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            onClick={() => window.open('https://www.youtube.com/watch?v=buosI0puvtA', '_blank')}
+            onClick={() => window.open('https://www.youtube.com/watch?v=h_Y9raqmplA', '_blank')}
           >
             <div className="video-container">
               <iframe
-                src="https://www.youtube.com/embed/buosI0puvtA"
+                src="https://www.youtube.com/embed/h_Y9raqmplA"
                 title="Product Updates"
                 frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -162,8 +162,8 @@ const NewsRoom = () => {
               ></iframe>
             </div>
             <div className="video-content">
-              <h3>Latest Product Updates</h3>
-              <p>Agrix Implements transported through waterways to remote areas</p>
+              <h3>Startup Stories & Innovations</h3>
+              <p>Get insights from a startup founder on how technology is driving change in rural agriculture</p>
               <div className="video-meta">
                 <span className="views">3.1K views</span>
                 
