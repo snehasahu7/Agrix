@@ -9,7 +9,7 @@ import app3 from "../../assets/App-3 (1).png";
 import datapool from "../../assets/data-pool.png"
 import img1 from "../../assets/Running Summary (1).jpg"
 import img2 from "../../assets/Tracking (3).jpg"
-import img3 from "../../assets/data analytics.jpeg"
+import img3 from "../../assets/statss.jpeg"
 import drone from "../../assets/drone.png"
 import strawreaper from "../../assets/straw reaper.png"
 import laserleveller from "../../assets/laser leveller.jpg"
