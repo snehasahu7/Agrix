@@ -291,24 +291,6 @@ useEffect(() => {
                 </motion.div>
               </motion.div>
             </motion.div>
-=======
-            <div className="map-card">
-              <div className="map-info">
-                <h4>Agrix Agrotech Private Limited</h4>
-                <div className="rating">
-                  <span className="rating-score">4.7</span>
-                  <span className="rating-stars">★★★★☆</span>
-                  <span className="review-count">7 reviews</span>
-                </div>
-                <div className="map-links">
-                  <a href="https://www.google.com/maps/dir//L1,+Agrix,+24,+Boring+Rd,+near+Children+Park,+Sri+Krishna+Puri,+Patna,+Bihar+800001/@25.6154839,85.1130465,20.58z/data=!4m8!4m7!1m0!1m5!1m1!1s0x39ed592337103a29:0x3c7bb0561bff452b!2m2!1d85.1130707!2d25.6154649?entry=ttu&g_ep=EgoyMDI1MDUxMi4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer" className="directions">Directions</a>
-                  <a href="https://www.google.com/maps/place/Agrix/@25.615493,85.1129926,19.9z/data=!4m16!1m9!3m8!1s0x39ed592337103a29:0x3c7bb0561bff452b!2sAgrix!8m2!3d25.6154394!4d85.1130353!9m1!1b1!16s%2Fg%2F11s7jts72k!3m5!1s0x39ed592337103a29:0x3c7bb0561bff452b!8m2!3d25.6154394!4d85.1130353!16s%2Fg%2F11s7jts72k?entry=ttu&g_ep=EgoyMDI1MDUxMi4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer" className="view-map">View larger map</a>
-                </div>
-              </div>
-              <div className="map-image">
-                <img src={patnaMap} alt="Map showing Agrix Patna Office location" />
-              </div>
-            </div>
           </div>
 
           {/* Message Section */}
