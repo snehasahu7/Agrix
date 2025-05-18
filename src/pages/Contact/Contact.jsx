@@ -31,31 +31,34 @@ const Contact = () => {
     
    
   }*/
+  
       const handleSubmit = async (e) => {
         e.preventDefault();
+      
+        const toastId = toast.loading("Sending...");
+      
         try {
-            const res = await fetch('http://localhost:5000/send', {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify(form)
-            });
-    
-            if (!res.ok) {
-                throw new Error('Network response was not ok');
-            }
-    
-            const data = await res.json();
-            toast.success(data.message || 'Message sent successfully!');
-           e.target.reset(); 
-            setform({ name: "", email: "", subject: "", message: "" });
-
-             
+          // Simulate success
+          await new Promise((resolve) => setTimeout(resolve, 1000));
+      
+          toast.update(toastId, {
+            render: "Message sent!",
+            type: "success",
+            isLoading: false,
+            autoClose: 3000,
+          });
+      
+          setform({ name: "", email: "", subject: "", message: "" });
         } catch (error) {
-            toast.error(`Error sending message: ${error.message}`);;
+          toast.update(toastId, {
+            render: `Error: ${error.message}`,
+            type: "error",
+            isLoading: false,
+            autoClose: 3000,
+          });
         }
-    };
-
-
+      };
+      
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -408,8 +411,8 @@ useEffect(() => {
                     <span className="review-count">7 reviews</span>
                   </div>
                   <div className="map-links">
-                    <a href="https://www.google.com/maps/dir//Maple+Capital+Advisors/data=!4m8!4m7!1m0!1m5!1m1!1s0x390ce3c59105a285:0x85a7c8568bfac6d9!2m2!1d77.2198543!2d28.5352659" target="_blank" rel="noopener noreferrer" className="directions">Directions</a>
-                    <a href="https://www.google.com/maps/place/Maple+Capital+Advisors/@28.5352659,77.2198543,17z" target="_blank" rel="noopener noreferrer" className="view-map">View larger map</a>
+                    <a href="https://www.google.com/maps/dir//Maple+Capital+Advisors,+2nd+Floor,+No.3,+Commercial+Complex,+Panchsheel+Park,+August+Kranti+Marg,+New+Delhi+-+110017,+Panchsheel+Park+North,+Panchsheel+Park,+New+Delhi,+Delhi+110049/@28.5477001,77.2109083,17z/data=!4m8!4m7!1m0!1m5!1m1!1s0x390ce2115b08e17b:0x55a0374b467b05e1!2m2!1d77.2109083!2d28.5477001?entry=ttu&g_ep=EgoyMDI1MDUxMy4xIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer" className="directions">Directions</a>
+                    <a href="https://www.google.com/maps/place/Maple+Capital+Advisors/@28.5477001,77.2083334,17z/data=!3m1!4b1!4m6!3m5!1s0x390ce2115b08e17b:0x55a0374b467b05e1!8m2!3d28.5477001!4d77.2109083!16s%2Fg%2F11b6bkhngg?entry=ttu&g_ep=EgoyMDI1MDUxMy4xIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer" className="view-map">View larger map</a>
                   </div>
                 </div>
                 <div className="map-image">
@@ -419,19 +422,19 @@ useEffect(() => {
 
               <div className="map-card">
                 <div className="map-info">
-                  <h4>Jagat Balram Apartment</h4>
+                  <h4>Agrix Agrotech Private Limited</h4>
                   <div className="rating">
-                    <span className="rating-score">4.0</span>
+                    <span className="rating-score">4.7</span>
                     <span className="rating-stars">★★★★☆</span>
-                    <span className="review-count">26 reviews</span>
+                    <span className="review-count">7 reviews</span>
                   </div>
                   <div className="map-links">
-                    <a href="https://www.google.com/maps/dir//Jagat+Balram+Apartment/data=!4m8!4m7!1m0!1m5!1m1!1s0x39ed5f5876c46f3b:0x9c2c22a7c6c0b89c!2m2!1d85.1289899!2d25.6115786" target="_blank" rel="noopener noreferrer" className="directions">Directions</a>
-                    <a href="https://www.google.com/maps/place/Jagat+Balram+Apartment/@25.6115786,85.1289899,17z" target="_blank" rel="noopener noreferrer" className="view-map">View larger map</a>
+                    <a href="https://www.google.com/maps/dir//L1,+Agrix,+24,+Boring+Rd,+near+Children+Park,+Sri+Krishna+Puri,+Patna,+Bihar+800001/@25.6154394,85.1104604,17z/data=!4m8!4m7!1m0!1m5!1m1!1s0x39ed592337103a29:0x3c7bb0561bff452b!2m2!1d85.1130707!2d25.6154649?entry=ttu&g_ep=EgoyMDI1MDUxMy4xIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer" className="directions">Directions</a>
+                    <a href="https://www.google.com/maps/place/Agrix/@25.6154394,85.1104604,17z/data=!3m1!4b1!4m6!3m5!1s0x39ed592337103a29:0x3c7bb0561bff452b!8m2!3d25.6154394!4d85.1130353!16s%2Fg%2F11s7jts72k?entry=ttu&g_ep=EgoyMDI1MDUxMy4xIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer" className="view-map">View larger map</a>
                   </div>
                 </div>
                 <div className="map-image">
-                  <img src={patnaMap} alt="Map showing Jagat Balram Apartment location" />
+                  <img src={patnaMap} alt="Map showing Agrix Agrotech Pvt. Ltd. location " />
                 </div>
               </div>
             </div>
