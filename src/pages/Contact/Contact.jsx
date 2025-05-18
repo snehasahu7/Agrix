@@ -33,6 +33,7 @@ const Contact = () => {
   }*/
       const handleSubmit = async (e) => {
         e.preventDefault();
+        const toastId = toast.loading("Sending message...");
         try {
             const res = await fetch('http://localhost:5000/send', {
                 method: 'POST',
@@ -45,13 +46,23 @@ const Contact = () => {
             }
     
             const data = await res.json();
-            toast.success(data.message || 'Message sent successfully!');
+            toast.update(toastId, {
+                render: "Message sent successfully!",
+                type: "success",
+                isLoading: false,
+                autoClose: 3000
+            });
            e.target.reset(); 
             setform({ name: "", email: "", subject: "", message: "" });
 
              
         } catch (error) {
-            toast.error(`Error sending message: ${error.message}`);;
+            toast.update(toastId, {
+                render: "Error : " + error.message,
+                type: "error",
+                isLoading: false,
+                autoClose: 3000
+            });
         }
     };
 
