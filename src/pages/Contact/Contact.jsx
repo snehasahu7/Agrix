@@ -34,28 +34,36 @@ const Contact = () => {
   
       const handleSubmit = async (e) => {
         e.preventDefault();
-      
-        const toastId = toast.loading("Sending...");
-      
+        const toastId = toast.loading("Sending message...");
         try {
-          // Simulate success
-          await new Promise((resolve) => setTimeout(resolve, 1000));
-      
-          toast.update(toastId, {
-            render: "Message sent!",
-            type: "success",
-            isLoading: false,
-            autoClose: 3000,
-          });
-      
-          setform({ name: "", email: "", subject: "", message: "" });
+            const res = await fetch('http://localhost:5000/send', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(form)
+            });
+    
+            if (!res.ok) {
+                throw new Error('Network response was not ok');
+            }
+    
+            const data = await res.json();
+            toast.update(toastId, {
+                render: "Message sent successfully!",
+                type: "success",
+                isLoading: false,
+                autoClose: 3000
+            });
+           e.target.reset(); 
+            setform({ name: "", email: "", subject: "", message: "" });
+
+             
         } catch (error) {
-          toast.update(toastId, {
-            render: `Error: ${error.message}`,
-            type: "error",
-            isLoading: false,
-            autoClose: 3000,
-          });
+            toast.update(toastId, {
+                render: "Error : " + error.message,
+                type: "error",
+                isLoading: false,
+                autoClose: 3000
+            });
         }
       };
       
