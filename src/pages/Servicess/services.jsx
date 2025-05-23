@@ -127,10 +127,9 @@ const Servicess = () => {
                 >
                   <GiWheat />
                   <div className="center-text">
-                    <h2>WHAT</h2>
-                    <h2>FARMERS</h2>
-                    <h2>FACE</h2>
-                    <h2>TODAY?</h2>
+                    <h3>WHAT FARMERS</h3>
+                    <h3>FACE TODAY?</h3>
+                    
                   </div>
                 </motion.div>
               </div>
