@@ -4,7 +4,6 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { motion } from "framer-motion";
 import intropic from "../../assets/Intropic.png"
-import journeypic from "../../assets/journey.png"
 import { BsRocket } from "react-icons/bs";
 import { RiFocus2Line } from "react-icons/ri";
 import investor from '../../assets/investors.js';
@@ -16,8 +15,6 @@ import img1 from "../../assets/Pankajkarna.png"
 import img2 from "../../assets/abhinavgrover.png"
 import img3 from "../../assets/samarthagarwal.png"
 import img4 from "../../assets/skgaitam.png"
-import img5 from "../../assets/manishcpandey.png"
-import { FaLinkedin } from "react-icons/fa6";
 import './About.css'
 
 
@@ -99,12 +96,8 @@ const About = ()=>{
             image:img4,
             name:"S.K Gautam",
             title:"Advisor for Agri Value Chain"
-        },
-        {
-            image:img5,
-            name:"Manish C. Pandey",
-            title:"CEO at Agriculturist"
         }
+        
     ]
 
     const settings = {
@@ -325,7 +318,7 @@ const About = ()=>{
                  return(
                     
                       <div className="founders-card">
-                        <img src={board.image} className="profile-pic" />
+                        <img src={board.image} alt="" className="profile-pic" />
                         <p className="name">{board.name}</p>
                         <div className="titlediv"><p className="title">{board.title}</p></div>
                         
