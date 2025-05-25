@@ -24,10 +24,9 @@ app.post("/send", async(req,res)=>{
         }
         
     });
- console.log("email:",process.env.GMAIL_USER);
-    console.log("pass:",process.env.GMAIL_PASS);
+ 
     const mailoptions = {
-        from:email,
+        from:`"${req.body.name} via Website" ${email}`,
         to:process.env.GMAIL_USER,
         subject:`Agrix Web Contact: ${subject}`,
         text:`From:${name} <${email}>\n\n${message}`
