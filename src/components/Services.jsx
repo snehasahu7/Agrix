@@ -1,5 +1,5 @@
 import React from 'react';
-import img1 from "../assets/Harvester in field.jpg"
+import img1 from "../assets/Harvester in field (1).jpg"
 import img2 from "../assets/pexels-cottonbro-5538169.jpg"
 import img3 from "../assets/Tracking (1).jpg"
 import img4 from "../assets/pexels-cytonn-955395.jpg"
