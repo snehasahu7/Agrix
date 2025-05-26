@@ -13,8 +13,8 @@ import f3 from '../../assets/sauravsingh.png';
 import f4 from '../../assets/vivekkumar.png';
 import img1 from "../../assets/Pankajkarna.png"
 import img2 from "../../assets/abhinavgrover.png"
-import img3 from "../../assets/samarthagarwal.png"
-import img4 from "../../assets/skgaitam.png"
+
+
 import './About.css'
 
 
@@ -87,16 +87,7 @@ const About = ()=>{
             name:"Abhinav Grover",
             title:"Director at Maple Accelerator"
         },
-        {
-            image:img3,
-            name:"Samarth Agarwal",
-            title:"Co-founder & CEO, MaxWholesale"
-        },
-        {
-            image:img4,
-            name:"S.K Gautam",
-            title:"Advisor for Agri Value Chain"
-        }
+        
         
     ]
 

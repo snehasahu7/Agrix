@@ -41,7 +41,7 @@ const Navbar = () => {
               </ul>
             )}
           </li>
-          <li><Link to='/resources' onClick={handleOptionClick}>Resources</Link></li>
+          {/*<li><Link to='/resources' onClick={handleOptionClick}>Resources</Link></li>*/}
           <li><Link to='/newsroom' onClick={handleOptionClick}>Newsroom</Link></li>
           <li><Link to='/about' onClick={handleOptionClick}>About</Link></li>
           <li><Link to='/contact' onClick={handleOptionClick}>Contact</Link></li>
