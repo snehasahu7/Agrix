@@ -7,13 +7,16 @@ import app1 from "../../assets/App-1 (1).png";
 import app2 from "../../assets/App-2 (1).png";
 import app3 from "../../assets/App-3 (1).png";
 import datapool from "../../assets/data-pool.png"
-import img1 from "../../assets/Running Summary (1).jpg"
+import img1 from "../../assets/Farmer meeting (1).jpg"
 import img2 from "../../assets/Tracking (3).jpg"
 import img3 from "../../assets/statss.jpeg"
 import drone from "../../assets/drone.png"
 import strawreaper from "../../assets/straw reaper.png"
 import laserleveller from "../../assets/laser leveller.jpg"
 import harvester from "../../assets/Harvester_with logo_png.png"
+import dash1 from "../../assets/Dashboard-1 (1).png"
+import dash2 from "../../assets/Dashboard-2.png"
+import dash3 from "../../assets/Dashboard-3.png"
 import "./Technology.css";
 
 const Technology = () => {
@@ -77,7 +80,7 @@ const Technology = () => {
         viewport={{ once: true }}
         transition={{ duration: 0.5, delay: 0.2 }}
       >
-        Agrix App Ecosystem
+        Agrix Tech Ecosystem
       </motion.h2>
       <motion.p 
         className="section-description"
@@ -86,9 +89,11 @@ const Technology = () => {
         viewport={{ once: true }}
         transition={{ duration: 0.5, delay: 0.3 }}
       >
-        Agrix App ecosystem aims to profile the clusters and digitize farming plots within the cluster. Our mobile application suite streamlines agricultural operations with seamless connectivity, real-time tracking, and efficient marketplace solutions.
+        Agrix Tech ecosystem aims to profile the clusters and digitize farming plots within the cluster. Our mobile application suite streamlines agricultural operations with seamless connectivity, real-time tracking, and efficient marketplace solutions.
       </motion.p>
     </motion.div>
+
+    <p className="appdash">Our Apps</p>
 
     <div className="mobile-apps-container">
       {/* Driver App */}
@@ -250,6 +255,217 @@ const Technology = () => {
             <div className="phone-notch"></div>
           </div>
           <img src={app3} alt="" className="app" />
+         {/* <motion.div 
+            className="app-content"
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, delay: 0.7 }}
+          >
+            <motion.div 
+              className="app-icon"
+              whileHover={{ scale: 1.1 }}
+              transition={{ type: "spring", stiffness: 300 }}
+            >
+              <i className="fas fa-store"></i>
+            </motion.div>
+            <h3>Market Place</h3>
+            <p>Digital platform for cluster level business</p>
+            <div className="app-features">
+              <motion.div 
+                className="feature"
+                whileHover={{ y: -5 }}
+                transition={{ type: "spring", stiffness: 300 }}
+              >
+                <i className="fas fa-shopping-cart"></i>
+                <span>Product Catalog</span>
+              </motion.div>
+              <motion.div 
+                className="feature"
+                whileHover={{ y: -5 }}
+                transition={{ type: "spring", stiffness: 300 }}
+              >
+                <i className="fas fa-handshake"></i>
+                <span>Bookings</span>
+              </motion.div>
+              <motion.div 
+                className="feature"
+                whileHover={{ y: -5 }}
+                transition={{ type: "spring", stiffness: 300 }}
+              >
+                <i className="fas fa-chart-line"></i>
+                <span>Business Analytics</span>
+              </motion.div>
+              <motion.div 
+                className="feature"
+                whileHover={{ y: -5 }}
+                transition={{ type: "spring", stiffness: 300 }}
+              >
+                <i className="fas fa-digital-tachograph"></i>
+                <span>Digital Records</span>
+              </motion.div>
+            </div>
+          </motion.div>*/}
+        </motion.div>
+      </motion.div>
+     </div>
+      <p className="appdash2">Our Dashbords</p>
+      <div className="mobile-apps-container">
+      <motion.div 
+        className="mobile-card"
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.5, delay: 0.6 }}
+      >
+        <motion.div 
+          className="phone-frame"
+          whileHover={{ y: -10 }}
+          transition={{ type: "spring", stiffness: 300 }}
+        >
+          <div className="phone-header">
+            <div className="phone-notch"></div>
+          </div>
+          <img src={dash1} alt="" className="app" />
+         {/* <motion.div 
+            className="app-content"
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, delay: 0.7 }}
+          >
+            <motion.div 
+              className="app-icon"
+              whileHover={{ scale: 1.1 }}
+              transition={{ type: "spring", stiffness: 300 }}
+            >
+              <i className="fas fa-store"></i>
+            </motion.div>
+            <h3>Market Place</h3>
+            <p>Digital platform for cluster level business</p>
+            <div className="app-features">
+              <motion.div 
+                className="feature"
+                whileHover={{ y: -5 }}
+                transition={{ type: "spring", stiffness: 300 }}
+              >
+                <i className="fas fa-shopping-cart"></i>
+                <span>Product Catalog</span>
+              </motion.div>
+              <motion.div 
+                className="feature"
+                whileHover={{ y: -5 }}
+                transition={{ type: "spring", stiffness: 300 }}
+              >
+                <i className="fas fa-handshake"></i>
+                <span>Bookings</span>
+              </motion.div>
+              <motion.div 
+                className="feature"
+                whileHover={{ y: -5 }}
+                transition={{ type: "spring", stiffness: 300 }}
+              >
+                <i className="fas fa-chart-line"></i>
+                <span>Business Analytics</span>
+              </motion.div>
+              <motion.div 
+                className="feature"
+                whileHover={{ y: -5 }}
+                transition={{ type: "spring", stiffness: 300 }}
+              >
+                <i className="fas fa-digital-tachograph"></i>
+                <span>Digital Records</span>
+              </motion.div>
+            </div>
+          </motion.div>*/}
+        </motion.div>
+      </motion.div>
+      <motion.div 
+        className="mobile-card"
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.5, delay: 0.6 }}
+      >
+        <motion.div 
+          className="phone-frame"
+          whileHover={{ y: -10 }}
+          transition={{ type: "spring", stiffness: 300 }}
+        >
+          <div className="phone-header">
+            <div className="phone-notch"></div>
+          </div>
+          <img src={dash2} alt="" className="app" />
+         {/* <motion.div 
+            className="app-content"
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, delay: 0.7 }}
+          >
+            <motion.div 
+              className="app-icon"
+              whileHover={{ scale: 1.1 }}
+              transition={{ type: "spring", stiffness: 300 }}
+            >
+              <i className="fas fa-store"></i>
+            </motion.div>
+            <h3>Market Place</h3>
+            <p>Digital platform for cluster level business</p>
+            <div className="app-features">
+              <motion.div 
+                className="feature"
+                whileHover={{ y: -5 }}
+                transition={{ type: "spring", stiffness: 300 }}
+              >
+                <i className="fas fa-shopping-cart"></i>
+                <span>Product Catalog</span>
+              </motion.div>
+              <motion.div 
+                className="feature"
+                whileHover={{ y: -5 }}
+                transition={{ type: "spring", stiffness: 300 }}
+              >
+                <i className="fas fa-handshake"></i>
+                <span>Bookings</span>
+              </motion.div>
+              <motion.div 
+                className="feature"
+                whileHover={{ y: -5 }}
+                transition={{ type: "spring", stiffness: 300 }}
+              >
+                <i className="fas fa-chart-line"></i>
+                <span>Business Analytics</span>
+              </motion.div>
+              <motion.div 
+                className="feature"
+                whileHover={{ y: -5 }}
+                transition={{ type: "spring", stiffness: 300 }}
+              >
+                <i className="fas fa-digital-tachograph"></i>
+                <span>Digital Records</span>
+              </motion.div>
+            </div>
+          </motion.div>*/}
+        </motion.div>
+      </motion.div>
+
+      <motion.div 
+        className="mobile-card"
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.5, delay: 0.6 }}
+      >
+        <motion.div 
+          className="phone-frame"
+          whileHover={{ y: -10 }}
+          transition={{ type: "spring", stiffness: 300 }}
+        >
+          <div className="phone-header">
+            <div className="phone-notch"></div>
+          </div>
+          <img src={dash3} alt="" className="app" />
          {/* <motion.div 
             className="app-content"
             initial={{ opacity: 0 }}

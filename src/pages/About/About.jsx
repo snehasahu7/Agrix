@@ -4,6 +4,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { motion } from "framer-motion";
 import intropic from "../../assets/Intropic.png"
+import journeypic from "../../assets/journey.png"
 import { BsRocket } from "react-icons/bs";
 import { RiFocus2Line } from "react-icons/ri";
 import investor from '../../assets/investors.js';
@@ -13,12 +14,14 @@ import f3 from '../../assets/sauravsingh.png';
 import f4 from '../../assets/vivekkumar.png';
 import img1 from "../../assets/Pankajkarna.png"
 import img2 from "../../assets/abhinavgrover.png"
-
-
+import img3 from "../../assets/Shushanto mitraa.png"
+import { FaLinkedin } from "react-icons/fa6";
 import './About.css'
 
 
 const About = ()=>{
+
+  
     const textVariants = {
         hidden: { opacity: 0, y: 50 },
         visible: { 
@@ -55,14 +58,14 @@ const About = ()=>{
         {
             imgg: f2,
             name:"Dr. Sandeep Joshi",
-            title:'D2D Communication and Machine Learning',
+            title:'D2D Comm. and Machine Learning',
             title2:'Phd, IIT Patna',
 
         },
         {
             imgg: f3,
             name:"Saurav Singh",
-            title:'Operation and Supply Chain Management',
+            title:'Operational Supply Management',
             title2:'B.Tech, CSE, WBUT',
 
         },
@@ -87,8 +90,12 @@ const About = ()=>{
             name:"Abhinav Grover",
             title:"Director at Maple Accelerator"
         },
-        
-        
+        {
+          image:img3,
+          name:"Shushanto Mitra",
+          title:"CEO at Lead Angels"
+        }
+       
     ]
 
     const settings = {
@@ -276,14 +283,14 @@ const About = ()=>{
   </div>
 </div>
 
-        <div className="founder">
+        <div className="advisory-board">
             <motion.p className="header"
                initial="hidden"
                whileInView={{opacity:1,y:0}}
                viewport={{ once: true }}
                variants={textVariants}>Our Team</motion.p>
             <p className="header2">People That Make It All Happen</p>
-            <Slider {...settings}>
+            {/*<Slider {...settings}>
                  {team.map((member) => (
                 <div  className="team-slide">
                     <img src={member.imgg} alt={member.name} className="team-img" />
@@ -292,7 +299,26 @@ const About = ()=>{
                     <p >{member.title2}</p>
           </div>
         ))}
-      </Slider>
+      </Slider>*/}
+             <div className="founderss">
+             {team.map((board)=>{
+              
+                 return(
+                    
+                      <div className="founders-card">
+                        <img src={board.imgg} className="profile-pic" />
+                        <p className="name">{board.name}</p>
+                        <div className="titlediv"><p className="title">{board.title}</p></div>
+                        <p>{board.title2}</p>
+                        {/*<div className="title2"><p className="title2">{team.title2}</p></div>
+                        <a ><FaLinkedin className="linkedinicon"/></a>*/}
+                     </div>
+                  
+                )
+                
+                 
+             })}
+              </div> 
             
         </div>
 
@@ -309,7 +335,7 @@ const About = ()=>{
                  return(
                     
                       <div className="founders-card">
-                        <img src={board.image} alt="" className="profile-pic" />
+                        <img src={board.image} className="profile-pic" />
                         <p className="name">{board.name}</p>
                         <div className="titlediv"><p className="title">{board.title}</p></div>
                         

@@ -168,10 +168,11 @@ p{
     margin-top: 50px;
     display: flex;
     flex-direction: row;
-
+    margin-left:0px ;
+    margin-right: 0px;
     padding: 45px;
     background-color: rgba(198, 198, 201, 0.533);
-    gap: 70px;
+    gap: 30px;
     overflow: hidden;
     border-radius: 40px;
 }

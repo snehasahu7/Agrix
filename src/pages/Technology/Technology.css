@@ -642,6 +642,7 @@ height: 85vh;
   position: relative;
   z-index: 2;
   padding: 0 20px;
+  
 }
 
 .mobile-card {
@@ -670,6 +671,22 @@ height: 85vh;
   position: relative;
   margin-bottom: 15px;
   background: #ffffff;
+}
+
+.appdash{
+   font-size: 39px;
+   font-weight: 600;
+   color: #ffffff;
+   margin-bottom: 30px;
+   margin-left: 75px;
+}
+.appdash2{
+  font-size: 39px;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 30px;
+  margin-left: 75px;
+  margin-top: 60px;
 }
 
 .phone-notch {
@@ -809,6 +826,19 @@ height: 85vh;
     flex-direction: column;
     align-items: center;
   }
+  .appdash{
+    align-items: center;
+    font-size: 29px;
+    text-align: center;
+    margin-left: 0;
+    
+  }
+  .appdash2{
+    align-items: center;
+    font-size: 29px;
+    text-align: center;
+    margin-left: 0;
+  }
 
   .mobile-card {
     width: 100%;
@@ -884,6 +914,23 @@ height: 85vh;
 
   .img-pool img {
     width: 300px;
+  }
+  .appdash{
+    align-items: center;
+    font-size: 25px;
+    font-weight: 800;
+    text-align: center;
+    margin-left: 0;
+    margin-bottom: 40px;
+    
+  }
+  .appdash2{
+    align-items: center;
+    font-size: 25px;
+    font-weight: 800;
+    text-align: center;
+    margin-left: 0;
+    margin-bottom: 40px;
   }
 }
 
