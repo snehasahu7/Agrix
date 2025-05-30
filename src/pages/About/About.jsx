@@ -52,14 +52,14 @@ const About = ()=>{
             imgg: f1,
             name:"Dr. Nilay Pandey",
             title:'Tech Development and Data Science',
-            title2:'Phd, IIT Patna',
+            title2:'Phd, IIT Delhi',
 
         },
         {
             imgg: f2,
             name:"Dr. Sandeep Joshi",
             title:'D2D Comm. and Machine Learning',
-            title2:'Phd, IIT Patna',
+            title2:'Phd, IIT Delhi',
 
         },
         {
