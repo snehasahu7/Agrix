@@ -1,15 +1,15 @@
 import img1 from './investors/upl.png'
 import img2 from './investors/vikas.png'
 import img3 from './investors/nsc.png'
-import img4 from './investors/indo.png'
-import img5 from './investors/grassrootstech.png'
-import img6 from './investors/gcaffe.png'
-import img7 from './investors/ergos.png'
-import img8 from './investors/dcm.png'
+import img4 from './investors/suumaya.png'
+import img5 from './investors/dasmesh.png'
+import img6 from './investors/john dheere.png'
+import img7 from './investors/saraf.png'
+import img8 from './investors/shriram.png'
 import img9 from './investors/bioseed.png'
 import img10 from './investors/bighaat.png'
 import img11 from './investors/bharatgrp.png'
-import img12 from './investors/bharatbolega.png'
+import img12 from './investors/itc.png'
 
 
 const investor = [
