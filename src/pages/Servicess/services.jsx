@@ -99,8 +99,8 @@ const Servicess = () => {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.5 }}
           >
-            <h2>AGRIX Farming Circle</h2>
-            <p>AgriX empowers small and marginal farmers in India through a 360-degree service model, providing end-to-end support from land preparation to market linkage. By creating farming clusters, AgriX delivers bankable farm mechanization, quality agri-inputs, and digital plot mapping at affordable prices, enhancing efficiency, productivity, and market access for farmers. Through cluster modeling, we consolidate fragmented lands, enhancing efficiency and bargaining power while delivering tailored support to farmers from inputs to outputs.
+            <h2>Agrix Farming Circle</h2>
+            <p>Agrix empowers small and marginal farmers in India through a 360-degree service model, providing end-to-end support from land preparation to market linkage. By creating farming clusters, AgriX delivers bankable farm mechanization, quality agri-inputs, and digital plot mapping at affordable prices, enhancing efficiency, productivity, and market access for farmers. Through cluster modeling, we consolidate fragmented lands, enhancing efficiency and bargaining power while delivering tailored support to farmers from inputs to outputs.
             </p>
           </motion.div>
         </div>
@@ -195,7 +195,7 @@ const Servicess = () => {
             transition={{ duration: 0.6, delay: 0.2 }}
             viewport={{ once: true }}
           >
-            AgriX empowers farmers not just to survive, but to thrive — with knowledge, tools, markets, and support at their fingertips.
+            Agrix empowers farmers not just to survive, but to thrive — with knowledge, tools, markets, and support at their fingertips.
           </motion.p>
 
           <div className="tech-items">
@@ -287,7 +287,7 @@ const Servicess = () => {
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
           >
-            Where AgriX Solutions Harvest Real Farmer Success 
+             Agrix Solutions Harvest Real Farmer Success 
           </motion.h2>
 
           <div className="solutions-grid">
