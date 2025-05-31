@@ -4,7 +4,9 @@ import Philosophy from "../../components/Philosophy.jsx"
 import Services from "../../components/Services.jsx"
 import Impact from "../../components/Impact.jsx";
 
+
 import Presence from "../../components/Presence.jsx";
+import ImpactMetrics from "../../components/ImpactMetrics.jsx";
 
 
 const Home=()=>{
@@ -15,6 +17,7 @@ const Home=()=>{
             <Philosophy/>
             <Services/>
             <Impact/>
+            <ImpactMetrics/>
             <Presence/>
         
         </div>
