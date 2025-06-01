@@ -11,6 +11,7 @@ import servicesBg from '../../assets/services_bg.png';
 import Farmerinteraction from '../../assets/Farmer-interaction.jpg';
 import skillgrowth from '../../assets/skill-growth.jpeg';
 import modernmachinery from '../../assets/modernmachinery.jpg';
+import farmerincome from '../../assets/farmer-income.jpg';
 import "./services.css";
 
 const Servicess = () => {
@@ -99,8 +100,8 @@ const Servicess = () => {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.5 }}
           >
-            <h2>AGRIX Farming Circle</h2>
-            <p>AgriX empowers small and marginal farmers in India through a 360-degree service model, providing end-to-end support from land preparation to market linkage. By creating farming clusters, AgriX delivers bankable farm mechanization, quality agri-inputs, and digital plot mapping at affordable prices, enhancing efficiency, productivity, and market access for farmers. Through cluster modeling, we consolidate fragmented lands, enhancing efficiency and bargaining power while delivering tailored support to farmers from inputs to outputs.
+            <h2>Agrix Farming Circle</h2>
+            <p>Agrix empowers small and marginal farmers in India through a 360-degree service model, providing end-to-end support from land preparation to market linkage. By creating farming clusters, AgriX delivers bankable farm mechanization, quality agri-inputs, and digital plot mapping at affordable prices, enhancing efficiency, productivity, and market access for farmers. Through cluster modeling, we consolidate fragmented lands, enhancing efficiency and bargaining power while delivering tailored support to farmers from inputs to outputs.
             </p>
           </motion.div>
         </div>
@@ -195,7 +196,7 @@ const Servicess = () => {
             transition={{ duration: 0.6, delay: 0.2 }}
             viewport={{ once: true }}
           >
-            AgriX empowers farmers not just to survive, but to thrive — with knowledge, tools, markets, and support at their fingertips.
+            Agrix empowers farmers not just to survive, but to thrive — with knowledge, tools, markets, and support at their fingertips.
           </motion.p>
 
           <div className="tech-items">
@@ -287,7 +288,7 @@ const Servicess = () => {
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
           >
-            Where AgriX Solutions Harvest Real Farmer Success 
+             Agrix Solutions Harvest Real Farmer Success 
           </motion.h2>
 
           <div className="solutions-grid">
@@ -335,7 +336,21 @@ const Servicess = () => {
               </p>
             </motion.div>
 
-            
+             <motion.div 
+              className="solution-card"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+              viewport={{ once: true }}
+            >
+              <div className="solution-icon">
+                <img src={farmerincome} alt="Rise in Farmer Income" />
+              </div>
+              <h3>Empowering Farmers with Agrix Services</h3>
+              <p>AgriX services have enabled Zaid season cultivation, leading to a 40% increase in crop returns and a 30–40% rise in overall farmer income.
+              </p>
+            </motion.div>
+
 
             
           </div>
