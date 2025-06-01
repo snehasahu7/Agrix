@@ -1,4 +1,4 @@
-import React from "react";
+import {React, useState} from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -16,10 +16,96 @@ import img1 from "../../assets/Pankajkarna.png"
 import img2 from "../../assets/abhinavgrover.png"
 import img3 from "../../assets/Shushanto mitraa.png"
 import { FaLinkedin } from "react-icons/fa6";
+import krishijagran from "../../assets/krishijagran.jpeg";
+import krishijagranwebsite from "../../assets/krishijagranwebsite.jpeg";
+import biharsummit from "../../assets/Bihar Summit.jpg";
+import successstory from "../../assets/sucessstory.jpeg";
+import startupaward from "../../assets/Startup Awad -1.jpeg";
+import maple from "../../assets/maple.png";
+import lead from "../../assets/lead.png"
 import './About.css'
 
 
 const About = ()=>{
+
+  const journeyEarlyLifePoints = [
+    "Nilay, raised in a Bihar village and from a family of educators, developed a deep connection with farming.",
+    "After leaving for higher studies, he earned an MTech in Signal & Image Processing from NIT Rourkela, focusing on image-based plant phenomics.",
+    "Worked as a senior research fellow and later pursued a Ph.D. at IIT Delhi.",
+    "A visit back to his village revealed a decline in farming, inspiring him to explore tech-driven solutions.",
+    "At IIT Delhi, he connected with Saurav and Vivek, sharing a mutual interest in addressing farming challenges."
+  ];
+  
+  const journeyRest = [
+    {
+      year: "2018",
+      
+      desc: "Driven by the farming challenges observed in a Bihar village, an IIT Delhi student initiated the exploration of technology-driven solutions for farmers."
+    },
+    {
+      year: "2019",
+      
+      desc: "With strong ties to rural communities, co-founders Saurav and Vivek started creating significant solutions. Together with farmers, a pilot farm was set up to evaluate these options."
+    },
+    {
+      year: "2020",
+      
+      desc: "Agrix was officially registered. The first farming cluster was established in Nawada, Bihar, marking the beginning of scalable impact."
+    },
+    {
+      year: "2021",
+     
+      desc: "Secured ₹2 Cr in funding to expand operational clusters. The company served over 1,000 farmers across multiple regions. Seed funding was raised to bolster supply chains and tech initiatives."
+    },
+    {
+      year: "2022",
+      
+      desc: "Monthly revenue surpassed ₹7.5 Mn. Operations expanded to 13 clusters, impacting more than 4,000 farmers. The company received recognition from the Bihar Government for its innovative approach."
+    },
+    {
+      year: "2023",
+      
+      desc: "Revenue exceeded ₹10 Mn per month. Agrix is now serving over 12,000+ farmers across 25 villages. The company is experiencing growing national demand, expanding its footprint beyond Bihar."
+    }
+  ];
+  
+  function JourneyTimeline() {
+    const [showAll, setShowAll] = useState(false);
+    // Each Early Life point is a separate card
+    const earlyLifeCards = journeyEarlyLifePoints.map((point, idx) => ({
+      year: idx === 0 ? "Early Life" : "",
+      
+      desc: point
+    }));
+    const allCards = [...earlyLifeCards, ...journeyRest];
+    const visibleCards = showAll ? allCards : allCards.slice(0, 4);
+  
+    return (
+      <section className="journey-zigzag-section">
+        <h2 className="journey-title">Our Journey</h2>
+        <div className="journey-zigzag-timeline">
+          {visibleCards.map((item, idx) => (
+            <div className={`zigzag-item ${idx % 2 === 0 ? 'top' : 'bottom'}`} key={idx}>
+              <div className="zigzag-content timeline-fixed-size">
+                
+                {item.year && <div className="zigzag-year">{item.year}</div>}
+                <div className="zigzag-desc">{item.desc}</div>
+              </div>
+              <div className="zigzag-dot"></div>
+            </div>
+          ))}
+          <div className="zigzag-line"></div>
+        </div>
+        {!showAll && (
+          <div style={{ textAlign: "center", marginTop: "2rem" }}>
+            <button className="read-more-btn" onClick={() => setShowAll(true)}>
+              Read More
+            </button>
+          </div>
+        )}
+      </section>
+    );
+  }
 
   
     const textVariants = {
@@ -191,7 +277,7 @@ const About = ()=>{
 
         </div>
 
-        <div className="journey-section">
+        {/*<div className="journey-section">
   <h2>Our Journey</h2>
   
   <div className="timeline">
@@ -281,7 +367,8 @@ const About = ()=>{
       </motion.div>
     </div>
   </div>
-</div>
+</div>*/}
+ <JourneyTimeline />
 
         <div className="advisory-board">
             <motion.p className="header"
@@ -374,8 +461,64 @@ const About = ()=>{
                     
                  })}
             </motion.div>
+          </motion.div>
+        <motion.div 
+        className="awards"
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+        variants={textVariants}>
+            <p className="header">Awards and Recognitions</p>
+            
+           
+            <div className="awards-gallery">
+              <motion.div className="award-card" whileHover={{ scale: 1.05 }}>
+                <img src={biharsummit} alt="Bihar Business Connect 2024" className="award-photo"/>
+                <h3>Bihar Business Connect 2024</h3>
+                <p>Recognized as a successful startup at the Bihar Business Connect 2024, Patna.</p>
+              </motion.div>
+              <motion.div className="award-card" whileHover={{ scale: 1.05 }}>
+                <img src={startupaward} alt="Startup Award 2024" className="award-photo"/>
+                <h3>Startup Award 2024</h3>
+                <p>Honored for outstanding innovation and impact in agri-tech at the Startup Awards 2024.</p>
+              </motion.div>
+              <motion.div className="award-card" whileHover={{ scale: 1.05 }}>
+                <img src={krishijagran} alt="Krishi Jagran Article" className="award-photo"/>
+                <h3>Featured in Krishi Jagran</h3>
+                <p>Our success story and impact featured in India's leading agri magazine.</p>
+                
+              </motion.div>
+              <motion.div className="award-card" whileHover={{ scale: 1.05 }}>
+                <img src={successstory} alt="Success Story" className="award-photo"/>
+                <h3>Government Success Story</h3>
+                <p>Recognized by government publications for empowering farmers with technology.</p>
+              </motion.div>
+              
+            </div>
 
+            
         </motion.div>
+
+        <motion.div 
+        className="investors2"
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+        variants={textVariants}>
+            <p className="header">Our Investors</p>
+            <p className="hh2"> Proudly backed by leading investors who share our vision to revolutionize agri-tech.</p>
+            <div className="investorcontainer">
+              <div className="invcon">
+                    <img className="invs" src={lead} alt="" />
+              </div>
+              
+              <div className="invcon">
+                <img className="invs" src={maple} alt="" />
+              </div>
+              
+            </div>
+        </motion.div>
+         
         </>
 
         
