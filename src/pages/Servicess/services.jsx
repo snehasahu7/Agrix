@@ -11,6 +11,7 @@ import servicesBg from '../../assets/services_bg.png';
 import Farmerinteraction from '../../assets/Farmer-interaction.jpg';
 import skillgrowth from '../../assets/skill-growth.jpeg';
 import modernmachinery from '../../assets/modernmachinery.jpg';
+import farmerincome from '../../assets/farmer-income.jpg';
 import "./services.css";
 
 const Servicess = () => {
@@ -335,7 +336,21 @@ const Servicess = () => {
               </p>
             </motion.div>
 
-            
+             <motion.div 
+              className="solution-card"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+              viewport={{ once: true }}
+            >
+              <div className="solution-icon">
+                <img src={farmerincome} alt="Rise in Farmer Income" />
+              </div>
+              <h3>Empowering Farmers with Agrix Services</h3>
+              <p>AgriX services have enabled Zaid season cultivation, leading to a 40% increase in crop returns and a 30–40% rise in overall farmer income.
+              </p>
+            </motion.div>
+
 
             
           </div>
