@@ -11,7 +11,7 @@ const Presence=()=>{
     useEffect(() => {
         const interval = setInterval(() => {
           setCount((prevCount) => {
-            if (prevCount < 12000) {
+            if (prevCount < 13000) {
               return prevCount + 50;
             } else {
               clearInterval(interval);  
