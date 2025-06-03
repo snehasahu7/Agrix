@@ -9,8 +9,9 @@ import marketLinkage from '../../assets/market-linkage.jpg';
 import expertMentorship from '../../assets/expert-mentorship.jpg';
 import servicesBg from '../../assets/services_bg.png';
 import Farmerinteraction from '../../assets/Farmer-interaction.jpg';
-import skillgrowth from '../../assets/skill-growth.jpeg';
-import modernmachinery from '../../assets/modernmachinery.jpg';
+import growth from '../../assets/growth.jpg';
+import modernmachinery from '../../assets/modern-machinery.jpg';
+
 import farmerincome from '../../assets/farmer-income.jpg';
 import "./services.css";
 
@@ -315,7 +316,7 @@ const Servicess = () => {
               viewport={{ once: true }}
             >
               <div className="solution-icon">
-                <img src={skillgrowth} alt="Skill Growth" />
+                <img src={growth} alt="Skill Growth" />
               </div>
               <h3>Knowledge & Skill Growth</h3>
               <p>AgriX offers expert support for machinery management while empowering local youth through training that drives employment, skills, and regional agricultural growth</p>
