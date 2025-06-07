@@ -8,7 +8,7 @@ const app = express();
 const port = 5000;
 app.use(express.json());
 app.use(cors({
-    origin:'https://agrixagrotech.netlify.app/contact',
+    origin:'https://agrixagrotech.netlify.app',
     methods:['POST']
 }));
 
