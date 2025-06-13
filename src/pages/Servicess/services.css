@@ -54,7 +54,9 @@
     margin-bottom: 2rem;
     margin-right: 0;
     padding-right: 0;
+ margin-left: -100px;
     position: relative;
+
     right: 0;
 }
 

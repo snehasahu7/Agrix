@@ -36,7 +36,7 @@ const Contact = () => {
         e.preventDefault();
         const toastId = toast.loading("Sending message...");
         try {
-            const res = await fetch('http://localhost:5000/send', {
+            const res = await fetch('https://agrix-1.onrender.com/send', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(form)
