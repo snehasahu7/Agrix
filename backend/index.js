@@ -1,4 +1,4 @@
-import express, {json} from "express";
+import express, {JSON} from "express";
 import nodemailer from "nodemailer";
 import cors from "cors";
 import fs from 'fs';
