@@ -74,7 +74,7 @@ let cachedEvents = [];
   }
 })();
 
-app.get('/api/postlist',(req,res)=>{
+app.get('/postlist',(req,res)=>{
    res.json(cachedEvents);
 });
 
