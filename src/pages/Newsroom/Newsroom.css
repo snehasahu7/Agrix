@@ -1,5 +1,4 @@
-
-  /* NewsRoom Styles */
+/* NewsRoom Styles */
 .newsroom-container {
   width: 100%;
   overflow-x: hidden;
@@ -210,7 +209,7 @@
 
 /* Video Updates Section */
 .video-updates-section {
-  padding: 5rem 2rem;
+  padding: 2rem 2rem 5rem;
   background: #f8f9fa;
   margin-top: -10px;
 }
@@ -415,11 +414,46 @@
 
 
 .news-list {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 1.5rem;
-  max-width: 1200px;
-  margin: 0 auto;
+  display: flex;
+  overflow-x: auto;
+  gap: 2.5rem;
+  padding: 1rem;
+  -webkit-overflow-scrolling: touch; /* for smooth scrolling on mobile */
+   scrollbar-width: none; /* For Firefox */
+  align-items: flex-start; /* Prevent items from stretching */
+}
+
+.news-list::-webkit-scrollbar {
+    display: none; /* For Chrome, Safari and Opera */
+}
+
+.news-list-container {
+  position: relative;
+}
+
+.scroll-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 10;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  line-height: 1;
+}
+
+.scroll-btn.left {
+  left: -20px;
+}
+
+.scroll-btn.right {
+  right: -20px;
 }
 
 .news-card {
@@ -428,6 +462,7 @@
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  flex: 0 0 350px;
 }
 
 .news-card:hover {
@@ -463,13 +498,74 @@
   color: #374151;
   line-height: 1.4;
 }
+
 .news-card a {
   text-decoration: none;
   color: inherit;
+  font-size: 0.8rem;
+}
+
+.post-text.truncated {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  margin-bottom: 1rem;
 }
 
 .newss{
   background-color: #f9fafb;
   padding: 3rem 1rem;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Media Coverage Section */
+.media-coverage-section {
+  padding: 5rem 2rem;
+  background: white;
+}
+
+.media-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.media-card {
+  background: #f8f9fa;
+  border-radius: 10px;
+  overflow: hidden;
+  text-decoration: none;
+  color: inherit;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.media-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+}
+
+.media-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.media-content {
+  padding: 1.5rem;
+}
+
+.media-content h3 {
+  font-size: 1.2rem;
+  color: #2c3e50;
+  margin-bottom: 0.5rem;
+}
+
+.media-source {
+  font-size: 0.9rem;
+  color: #00b899;
+  font-weight: 500;
 }

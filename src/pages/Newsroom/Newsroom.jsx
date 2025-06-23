@@ -1,42 +1,52 @@
-import React from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
 import './Newsroom.css';
 import news1 from '../../assets/news1.png'
 import news2 from '../../assets/news2.png'
-import news3 from '../../assets/wheatnews.png'
 
-const newsItems = [
-    {
-    title: 'Agrix Team in Action During Wheat Harvesting Season',
-    date: 'April 2025',
-    summary:
-      'Co-founder Saurav Singh shared a behind-the-scenes look at wheat harvesting. The team’s long work hours reflect their mission to scale agri-mechanization and serve farmers.',
-    link: 'https://www.linkedin.com/company/agrixagrotech/',
-    image: news3,
-  },
+import PostCard from './PostCard';
+
+const mediaArticles = [
   {
     title: 'Agrix Receives Growth Capital from Lead Angels Network',
-    date: 'December 6, 2021',
-    summary:
-      'Agrix Agrotech has secured growth capital from Lead Angels Network to expand operations, enhance technology platforms, and increase farmer engagement.',
+    source: 'Hindustan Times',
     link: 'https://www.hindustantimes.com/business/agritech-startup-agrix-gets-capital-infusion-from-lead-angels-network-101638791778616.html',
-    image:
-      news1,
+    image: news1,
   },
   {
     title: 'Agrix Secures Seed Funding from Maple Capital Advisors',
-    date: 'October 30, 2020',
-    summary:
-      'Patna-based Agrix Agrotech has raised an undisclosed amount in seed funding from Maple Capital Advisors to strengthen its technology and operations.',
+    source: 'TechStory',
     link: 'https://techstory.in/agrix-secured-undisclosed-amount-backed-by-maple-capital-advisors/',
-    image:
-      news2,
+    image: news2,
   },
-  
-
+ 
 ];
 
 const NewsRoom = () => {
+  const [posts, setPosts] = useState([]);
+  const listRef = useRef(null);
+
+  const scrollBy = (amount) => {
+    if (listRef.current) {
+      listRef.current.scrollBy({ left: amount, behavior: 'smooth' });
+    }
+  };
+
+  useEffect(() => {
+    const fetchPosts = async () => {
+      try {
+        const response = await fetch('https://agrix-1.onrender.com/postlist');
+        const data = await response.json();
+        const postsWithImages = data.filter(post => post.images && post.images.length > 0);
+        setPosts(postsWithImages);
+      } catch (error) {
+        console.error('Failed to fetch posts:', error);
+      }
+    };
+
+    fetchPosts();
+  }, []);
+
   return (
     <div className="newsroom-container">
       {/* Hero Section */}
@@ -64,20 +74,15 @@ const NewsRoom = () => {
           <p>Recent developments and announcements from Agrix</p>
         </motion.div>
         <div className="newss">
-        <div className="news-list">
-              {newsItems.map((item, index) => (
-              <div className="news-card" key={index}>
-                  <a href={item.link} target="_blank" rel="noopener noreferrer">
-                    <img src={item.image} alt={item.title} className="news-image" />
-                    <div className="news-content">
-                      <h3>{item.title}</h3>
-                      <p className="news-date">{item.date}</p>
-                       <p>{item.summary}</p>
-                    </div>
-                  </a>
-              </div>
-              ))}
-        </div>
+          <div className="news-list-container">
+            <button className="scroll-btn left" onClick={() => scrollBy(-370)}>&lt;</button>
+            <div className="news-list" ref={listRef}>
+                {posts.map((item) => (
+                  <PostCard key={item.post_id} post={item} />
+                ))}
+            </div>
+            <button className="scroll-btn right" onClick={() => scrollBy(370)}>&gt;</button>
+          </div>
         </div>
         </section>
 
@@ -183,76 +188,39 @@ const NewsRoom = () => {
         </div>
       </section>
 
-       {/* Agriculture Forecast Section */}
-       <section className="forecast-section">
+      {/* Media Coverage Section */}
+      <section className="media-coverage-section">
         <motion.div 
           className="section-header"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
         >
-          <h2>Agriculture Forecast</h2>
-          <p>Expert insights and predictions for the agricultural sector</p>
+          <h2>Agrix in the News</h2>
+          <p>Read what the media is saying about us</p>
         </motion.div>
-
-        <div className="forecast-grid">
-          <motion.div 
-            className="forecast-card"
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-          >
-            <div className="forecast-icon">
-              <i className="fas fa-cloud-sun"></i>
-            </div>
-            <h3>Weather Impact Analysis</h3>
-            <p>Upcoming weather patterns and their potential impact on crop yields</p>
-            <ul className="forecast-points">
-              <li>Expected rainfall patterns for the next month</li>
-              <li>Temperature trends and crop implications</li>
-              <li>Region-specific weather advisories</li>
-            </ul>
-          </motion.div>
-
-          <motion.div 
-            className="forecast-card"
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-          >
-            <div className="forecast-icon">
-              <i className="fas fa-chart-line"></i>
-            </div>
-            <h3>Market Trends</h3>
-            <p>Analysis of agricultural market trends and price forecasts</p>
-            <ul className="forecast-points">
-              <li>Commodity price predictions</li>
-              <li>Supply chain insights</li>
-              <li>Market demand analysis</li>
-            </ul>
-          </motion.div>
-
-          <motion.div 
-            className="forecast-card"
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-          >
-            <div className="forecast-icon">
-              <i className="fas fa-seedling"></i>
-            </div>
-            <h3>Crop Advisory</h3>
-            <p>Expert recommendations for optimal crop management</p>
-            <ul className="forecast-points">
-              <li>Best practices for current season</li>
-              <li>Pest and disease alerts</li>
-              <li>Soil health recommendations</li>
-            </ul>
-          </motion.div>
+        <div className="media-grid">
+          {mediaArticles.map((article, index) => (
+            <motion.a 
+              key={index} 
+              href={article.link} 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="media-card"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ delay: index * 0.1 }}
+              viewport={{ once: true }}
+            >
+              <img src={article.image} alt={article.title} className="media-image" />
+              <div className="media-content">
+                <h3>{article.title}</h3>
+                <p className="media-source">{article.source}</p>
+              </div>
+            </motion.a>
+          ))}
         </div>
       </section>
-
-
     </div>
 )}
 
