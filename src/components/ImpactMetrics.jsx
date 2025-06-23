@@ -1,23 +1,25 @@
 import React from "react";
 import {
-  FaTractor,
+   FaFireAlt,
   FaUsers,
+  FaGlobe,
   FaSeedling,
-    FaFlask,
-  FaHome,
   FaMapMarkedAlt,
+  FaHome,
 } from "react-icons/fa";
+
 
 import "./ImpactMetrics.css";
 
 const ImpactMetrics = () => {
   const metrics = [
-    { icon: <FaTractor />, label: "Farmer's Impacted", value: "13,000+" },
-    { icon: <FaUsers />, label: "Families Employed", value: "50+" },
-    { icon: <FaSeedling />, label: "Better Crop Realization Upto", value: "40%" },
-    { icon: <FaFlask />, label: "Reduced Stubble Burning Upto", value: "25%" },
+    
+    { icon: <  FaMapMarkedAlt />, label: "Total Clusters", value: "10" },
     { icon: <FaHome />, label: "Villages Covered", value: "70+" },
-    { icon: <FaMapMarkedAlt/>, label: "Total Clusters", value: "8" },
+     { icon: <FaUsers />, label: "Farmers Impacted", value: "13,000+" },
+     { icon: <FaGlobe/>, label: "Acres Served", value: "20,000+" },
+      { icon: <FaSeedling />, label: "Better Crop Realization ", value: "40%" },
+       { icon: < FaFireAlt />, label: "Reduced Stubble Burning", value: "25%" },
   ];
 
   return (
