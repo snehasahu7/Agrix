@@ -197,7 +197,7 @@ const NewsRoom = () => {
           viewport={{ once: true }}
         >
           <h2>Agrix in the News</h2>
-          <p>Read what the media is saying about us</p>
+          <p>Media highlights and news coverage of Agrix</p>
         </motion.div>
         <div className="media-grid">
           {mediaArticles.map((article, index) => (
