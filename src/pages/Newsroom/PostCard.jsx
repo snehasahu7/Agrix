@@ -10,7 +10,10 @@ const PostCard = ({ post }) => {
   };
 
   const contentLines = post.content.split('\n');
-  const isLongContent = contentLines.length > 3 || post.content.length > 200; // also check content length
+  const isLongContent = contentLines.length > 3 || post.content.length > 200;
+
+  // Filter hashtags to length <= 12 and take up to 3
+  const filteredHashtags = post.hashtags.filter(tag => tag.length <= 14).slice(0, 3);
 
   return (
     <div className="news-card">
@@ -18,7 +21,7 @@ const PostCard = ({ post }) => {
           <img src={post.images[0]} alt="Post" className="news-image" />
         )}
         <div className="news-content">
-          <div className={`post-text ${!isExpanded && isLongContent ? 'truncated' : ''}`}>
+          <div className={`post-text${!isExpanded && isLongContent ? ' truncated' : ''}`}>
             {post.content}
           </div>
           {isLongContent && (
@@ -29,7 +32,7 @@ const PostCard = ({ post }) => {
             </div>
           )}
           <div className="hashtags">
-            {post.hashtags.slice(0, 3).map((tag, i) => (
+            {filteredHashtags.map((tag, i) => (
               <span key={i} className="hashtag"><strong>{tag}</strong></span>
             ))}
           </div>
