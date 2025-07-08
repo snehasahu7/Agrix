@@ -35,7 +35,8 @@ const NewsRoom = () => {
   useEffect(() => {
     const fetchPosts = async () => {
       try {
-        const response = await fetch('https://agrix-1.onrender.com/postlist');
+        const response = await fetch('http://agrixagro.riequation.com/api/postlist.php');
+
         const data = await response.json();
         const postsWithImages = data.filter(post => post.images && post.images.length > 0);
         setPosts(postsWithImages);
