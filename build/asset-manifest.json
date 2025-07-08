@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.6861340f.css",
-    "main.js": "/static/js/main.99064ce4.js",
+    "main.css": "/static/css/main.15a1510a.css",
+    "main.js": "/static/js/main.d89d11d0.js",
     "static/media/maize_crop.jpg": "/static/media/maize_crop.3fbc8a7bca8962cbf502.jpg",
     "static/media/pexels-cottonbro-5538169.jpg": "/static/media/pexels-cottonbro-5538169.a9cdd101941e55a170d7.jpg",
     "static/media/services_bg.png": "/static/media/services_bg.8e467de712f495bd53e5.png",
@@ -18,7 +18,6 @@
     "static/media/Intropic.png": "/static/media/Intropic.41b8e6420d0654d1653f.png",
     "static/media/news2.png": "/static/media/news2.d37440691cf2f0064426.png",
     "static/media/ezgif.com-gif-maker.gif": "/static/media/ezgif.com-gif-maker.2bc9624930787cf0fb21.gif",
-    "static/media/wheatnews.png": "/static/media/wheatnews.41228ec0d7124bd8982e.png",
     "static/media/agri input.jpeg": "/static/media/agri input.df04bf5d3a8129103582.jpeg",
     "static/media/straw reaper.png": "/static/media/straw reaper.1bb72e908abbbdd67387.png",
     "static/media/Bihar Summit.jpg": "/static/media/Bihar Summit.ed0b5bd194b8cb95aa8c.jpg",
@@ -42,6 +41,7 @@
     "static/media/Dashboard-2.png": "/static/media/Dashboard-2.80250ae77cea13a4350a.png",
     "static/media/nsc.png": "/static/media/nsc.24596f8a3c0d7ee33a35.png",
     "static/media/vivekkumar.png": "/static/media/vivekkumar.5a095e0444f99f91b8f4.png",
+    "static/media/expert-mentorship.jpg": "/static/media/expert-mentorship.552b8b68866dc4eda10a.jpg",
     "static/media/Farmer meeting (1).jpg": "/static/media/Farmer meeting (1).397be07f8fca9a3132ff.jpg",
     "static/media/fa-brands-400.ttf": "/static/media/fa-brands-400.1815e00441357e01619e.ttf",
     "static/media/abhinavgrover.png": "/static/media/abhinavgrover.e5ac50e1f11ce9e0f6df.png",
@@ -74,7 +74,6 @@
     "static/media/market-linkage.jpg": "/static/media/market-linkage.3397a860748f198708f5.jpg",
     "static/media/machinery-rental.jpg": "/static/media/machinery-rental.7eee0277c84d5537f218.jpg",
     "static/media/statss.jpeg": "/static/media/statss.2e5b103c372b8692b588.jpeg",
-    "static/media/expert-mentorship.jpg": "/static/media/expert-mentorship.c407d7486494ab035b59.jpg",
     "static/media/maple.png": "/static/media/maple.26d1aa15f82b23011ba5.png",
     "static/media/lead.png": "/static/media/lead.70a89f9bdf43f910e11b.png",
     "static/media/itc.png": "/static/media/itc.e27cdec5708b107506f8.png",
@@ -90,11 +89,11 @@
     "static/media/slick.ttf": "/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/index.html",
-    "main.6861340f.css.map": "/static/css/main.6861340f.css.map",
-    "main.99064ce4.js.map": "/static/js/main.99064ce4.js.map"
+    "main.15a1510a.css.map": "/static/css/main.15a1510a.css.map",
+    "main.d89d11d0.js.map": "/static/js/main.d89d11d0.js.map"
   },
   "entrypoints": [
-    "static/css/main.6861340f.css",
-    "static/js/main.99064ce4.js"
+    "static/css/main.15a1510a.css",
+    "static/js/main.d89d11d0.js"
   ]
 }
