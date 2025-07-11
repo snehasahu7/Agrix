@@ -36,7 +36,7 @@ const Contact = () => {
         e.preventDefault();
         const toastId = toast.loading("Sending message...");
         try {
-             const res = await fetch('http://agrixagro.riequation.com/api/send.php', {
+             const res = await fetch('http://agrixagro.com/api/send.php', {
 
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
