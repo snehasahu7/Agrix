@@ -35,7 +35,7 @@ const NewsRoom = () => {
   useEffect(() => {
     const fetchPosts = async () => {
       try {
-        const response = await fetch('http://agrixagro.com/api/postlist.php');
+        const response = await fetch('https://agrixagro.com/api/postlist.php');
 
         const data = await response.json();
         const postsWithImages = data.filter(post => post.images && post.images.length > 0);
