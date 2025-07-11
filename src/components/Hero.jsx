@@ -11,7 +11,7 @@ const Hero = () => {
         <div className="hero-content1">
           <h1>360° Farming as a Service</h1>
           <p>Empowering Small & Marginal Farmers</p>
-          <Link to='/servicess' className="cta-button">Get Started</Link>
+          <Link to='/services' className="cta-button">Get Started</Link>
         </div>
       </div>
     </section>
